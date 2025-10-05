@@ -1,10 +1,8 @@
-# Configuration of Hugo
-# Guide: https://docs.hugoblox.com/tutorial/
-# Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+# Hugo 기본 설정 (KOR 주석)
+# - 사이트 제목/URL, 언어, 출력옵션 등 전역 설정을 담당합니다.
 
-title: Hugo Portfolio Theme # Website name
-baseURL: 'https://example.com/' # Website URL
+title: 나의 포트폴리오 # 사이트 제목 (브라우저 탭/헤더)
+baseURL: 'https://<사용자명>.github.io/' # 사이트 URL (배포 도메인에 맞게 수정)
 
 ############################
 ## PAGE OPTIONS
@@ -21,11 +19,11 @@ cascade:
     show_breadcrumb: true
 
 ############################
-## LANGUAGE
+## LANGUAGE (언어)
 ############################
 
-defaultContentLanguage: en
-hasCJKLanguage: false
+defaultContentLanguage: ko  # 기본 언어(한국어)
+hasCJKLanguage: true        # 한중일 문자 표시 최적화
 defaultContentLanguageInSubdir: false
 removePathAccents: true
 

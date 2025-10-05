@@ -1,9 +1,10 @@
-# SITE SETUP
-# Guide: https://docs.hugoblox.com/tutorial/
-# Documentation: https://docs.hugoblox.com/
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+# 사이트 전역 설정 (KOR 주석)
+# - 이 파일은 사이트의 스타일/헤더/푸터/SEO/기능을 제어합니다.
+# - 값만 바꿔도 디자인이 크게 달라질 수 있으니, 키 이름은 유지하세요.
 
-# Appearance
+# 외형(Appearance)
+# - theme_day/theme_night: 라이트/다크 테마 이름
+# - font/font_size: 폰트와 크기(L/XL 등)
 
 appearance:
   theme_day: custom
@@ -11,7 +12,9 @@ appearance:
   font: minimal
   font_size: L
 
-# SEO
+# SEO/마케팅 설정
+# - description: 사이트 설명(검색/미리보기)
+# - analytics: Google Analytics 등 추적 코드
 
 marketing:
   seo:
@@ -29,7 +32,10 @@ marketing:
     google: ''
     baidu: ''
 
-# Site header
+# 헤더(내비게이션 바)
+# - show_language: 다국어 아이콘 표시
+# - show_day_night: 다크/라이트 모드 토글 표시
+# - show_search: 검색 아이콘 표시
 
 header:
   navbar:
@@ -42,6 +48,7 @@ header:
     highlight_active_link: false
 
 footer:
+  # 푸터 저작권/라이선스 문구. 필요 시 비활성화 가능
   copyright:
     notice: '© {year} Me. This work is licensed under {license}'
     license:
@@ -50,13 +57,13 @@ footer:
       share_alike: true
       allow_commercial: false
 
-# Localization
+# 지역화(날짜/시간 포맷)
 
 locale:
   date_format: 'Jan 2, 2006'
   time_format: '3:04 PM'
 
-# Site features
+# 사이트 기능
 
 features:
   syntax_highlighter:
@@ -88,15 +95,15 @@ features:
       category: ''
       category_id: ''
   search:
-    provider: ''
+    provider: ''  # 기본 검색 비활성(공백). "algolia" 등 설정 가능
     algolia:
       app_id: ''
       api_key: ''
       index_name: ''
       show_logo: false
   map:
-    provider: ''
-    api_key: ''
+    provider: ''  # "google" 등 지도 제공자
+    api_key: ''   # 지도 API 키(필요 시 입력)
     zoom: 15
 
 extensions:

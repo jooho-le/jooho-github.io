@@ -1,7 +1,7 @@
-# Navigation Links
-#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
-  #     desired widget in your `content/home/` folder.
-  #   The weight parameter defines the order that the links will appear in.
+# 내비게이션(상단 메뉴) 설정
+# - 홈 위젯으로 점프하려면 URL을 `/#파일명` 형태로 작성합니다.
+#   예) `content/home/portfolio.md` → `/#portfolio`
+# - `weight` 값이 작을수록 왼쪽(상단에서 먼저) 배치됩니다.
 
 main:
   - name: 홈

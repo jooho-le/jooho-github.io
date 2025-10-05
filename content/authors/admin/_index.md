@@ -1,73 +1,46 @@
 ---
-# Display name
-title: lee joogo
+# 작성자 프로필 (히어로/포스트 하단 등에서 사용)
 
-# Is this the primary user of the site?
+# 표시 이름 (ex. 홍길동)
+title: 내 이름을 입력하세요
+
+# 사이트의 기본 사용자 여부 (단일 사용자 사이트면 true 유지)
 superuser: true
 
-# Role/position
+# 직무/포지션 (ex. 머신러닝 엔지니어)
 role: ''
 
-# Status emoji
+# 상태 이모지 (선택)
 status:
   icon: ☕️
 
-# Organizations/Affiliations
-#organizations:
-#- name: 腾讯
-#  url: ""
+# 한 줄 소개/간단 소개 (프로필 카드/포스트 하단에 표시)
+bio: 한 줄 소개를 입력하세요.
 
-# Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
-
-#interests:
-#- Artificial Intelligence
-#- Computational Linguistics
-#- Information Retrieval
-
-#education:
-#  courses:
-#  - course: PhD in Artificial Intelligence
-#    institution: Stanford University
-#    year: 2012
-#  - course: MEng in Artificial Intelligence
-#    institution: Massachusetts Institute of Technology
-#    year: 2009
-#  - course: BSc in Artificial Intelligence
-#    institution: Massachusetts Institute of Technology
-#    year: 2008
-
-# Social/Academic Networking
-# For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
-#   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
-#   form "mailto:your-email@example.com" or "#contact" for contact widget.
+# 소셜/링크 아이콘
+# - 사용 가능한 아이콘: docs 참고
+# - 이메일 링크는 `mailto:example@domain.com` 형태 사용
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'about/#contact' # For a direct email link, use "mailto:test@example.org".
-  - icon: twitter
-    icon_pack: fab
-    link: https://twitter.com/wowchemy
-  - icon: instagram
-    icon_pack: fab
-    link: https://instagram.com/geocushen
-# Uncomment below for Github link
-#- icon: github
-#  icon_pack: fab
-#  link: https://github.com/gcushen
+    link: 'about/#contact'  # 연락처 위젯으로 이동. 직접 메일은 mailto 사용
+  #- icon: github
+  #  icon_pack: fab
+  #  link: https://github.com/<사용자명>
+  #- icon: linkedin
+  #  icon_pack: fab
+  #  link: https://www.linkedin.com/in/<사용자명>/
+  #- icon: instagram
+  #  icon_pack: fab
+  #  link: https://instagram.com/<사용자명>
 
-# Link to a PDF of your resume/CV from the About widget.
-# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
+# 이력서 PDF 링크(선택)
+# - `static/uploads/resume.pdf` 위치에 파일 두고 아래 주석 해제
 # - icon: cv
 #   icon_pack: ai
-#   link: files/cv.pdf
-
-# Enter email to display Gravatar (if Gravatar enabled in Config)
-#email: ""
+#   link: uploads/resume.pdf
 ---
+여기에 자기소개 본문을 한국어로 자유롭게 적어주세요.
+프로젝트 관심사, 경력, 목표 등을 간단히 서술하면 좋습니다.
 
-Alice Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
-
-{{< icon name="download" pack="fas" >}} {{< staticref "uploads/resume.pdf" "newtab" >}}Download{{< /staticref >}} my resumé as a PDF.
+{{< icon name="download" pack="fas" >}} {{< staticref "uploads/resume.pdf" "newtab" >}}이력서 다운로드{{< /staticref >}}
