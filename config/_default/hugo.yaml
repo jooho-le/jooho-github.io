@@ -2,7 +2,7 @@
 # - 사이트 제목/URL, 언어, 출력옵션 등 전역 설정을 담당합니다.
 
 title: 나의 포트폴리오 # 사이트 제목 (브라우저 탭/헤더)
-baseURL: 'https://<사용자명>.github.io/' # 사이트 URL (배포 도메인에 맞게 수정)
+baseURL: 'https://joogo-lee.github.io/' # 사이트 URL (배포 도메인에 맞게 수정)
 
 ############################
 ## PAGE OPTIONS
