@@ -1,8 +1,8 @@
 ---
-title: Cosmetics Semantic Search
-summary: 화장품 성분·후기 데이터를 임베딩하여 의미 기반으로 유사 제품을 찾는 검색 시스템입니다. Sentence-BERT로 쿼리-상품 임베딩을 생성하고 FAISS로 빠른 근사 최근접 탐색을 수행합니다.
+title: MediMate
+summary: 의사소통이 어려운 환자들을 대상으로 만든 웹, 앱입니다. 보호자의 동반 없이도 진료를 볼 수 있게 의사에게 어디가 어떻게 언제부터 아픈지 앱을 통해 의사에게 전달하고 의사의 진료기록은 웹에 저장이 되어 환자, 환자의 보호자가 확인 할 수 있는 의료보조 서비스 입니다. 
 tags:
   - NLP
-date: 2022-01-01
-external_link: http://github.com
+date: 2025-05-05 - 2025.5.30
+external_link: https://github.com/jooho-le/CMD_MadiMate
 ---
