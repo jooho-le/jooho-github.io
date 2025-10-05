@@ -161,3 +161,24 @@ ul.network-icon .big-icon {
   padding: 0.6rem 1.1rem;
   border-radius: 10px;
 }
+
+/* Portfolio 섹션: 세로 나열 + 이미지/제목만 보이도록 최소화 */
+#portfolio .isotope-item { width: 100% !important; }
+#portfolio .card-simple .article-metadata,
+#portfolio .card-simple .article-style,
+#portfolio .card-simple .summary,
+#portfolio .card-simple .btn-links,
+#portfolio .card-simple .tags,
+#portfolio .card-simple .card-footer { display: none !important; }
+
+#portfolio .card-simple .article-title { 
+  display: block; 
+  font-weight: 700; 
+  font-size: 1.05rem; 
+  margin: 0.6rem 0 0.2rem; 
+}
+
+#portfolio .card-simple .card-image, 
+#portfolio .card-simple figure { 
+  margin-bottom: 0.4rem; 
+}

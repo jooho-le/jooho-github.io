@@ -28,15 +28,17 @@ content:
   filter_button:
     - name: All
       tag: '*'
-    - name: Machine Learning
-      tag: ML
-    - name: Computer Vision
-      tag: CV
-    - name: NLP
-      tag: NLP
+    - name: Web service
+      tag: Web service
+    - name: App service
+      tag: App service
+    - name: Data analysis
+      tag: Data analysis
+    - name : AI
+      tag : AI
 
 design:
-  columns: '3'
+  columns: '1'
   view: masonry
   flip_alt_rows: true
   background: {}
