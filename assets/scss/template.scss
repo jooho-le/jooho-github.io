@@ -1,13 +1,15 @@
 // Starter Blog Template
 // https://hugoblox.com/hugo-themes/
 
+// 전체 배경색 (라이트 모드)
 body {
-  background-color: rgb(247, 250, 252);
+  background-color: #0f1113; // 홈 히어로와 어울리는 어두운 바탕
 }
 
+// 본문 카드 컨테이너 (포스트/프로젝트 상세 등)
 .article-container {
-  background-color: #fff;
-  border-radius: 15px;
+  background-color: #ffffff;
+  border-radius: 14px;
 }
 
 .dark .article-container {
@@ -15,8 +17,9 @@ body {
 }
 
 // custom footer color
+// 푸터 배경
 .page-footer {
-  background-color: rgb(247, 250, 252);
+  background-color: #0f1113;
 }
 
 .dark .page-footer {
@@ -24,27 +27,51 @@ body {
 }
 
 // more rounded cards and larger gap between cards
+// 카드 스타일
 .card-simple {
   margin-top: 1.8rem;
-  border-radius: 15px;
+  border-radius: 14px;
 }
 
 .dark .card-simple {
   background: rgb(31, 39, 51);
 }
 
-// no navbar shadow
+// 상단 네비게이션 바 스타일
 .navbar {
-  box-shadow: none !important; // 'important' to override dark mode box-shadow too.
+  box-shadow: none !important; // 그림자 제거
+  background-color: #6b7280 !important; // 회색 헤더
+}
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .dropdown-toggle,
+.navbar .navbar-toggler {
+  color: #ffffff !important;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #e5e7eb !important; // 살짝 밝게
+}
+.navbar .navbar-brand img {
+  height: 36px;
 }
 
 // custom section padding
-.home-section {
-  padding: 1rem 0;
-}
+// 섹션 패딩 기본값
+.home-section { padding: 1rem 0; }
 
+// 히어로(인트로) 섹션 - 어두운 배경 + 중앙 정렬
 .home-section.wg-about-avatar {
-  padding: 0;
+  padding: 6rem 0 4rem 0;
+  background-color: #111418;
+}
+.home-section.wg-about-avatar, .home-section.wg-about-avatar * {
+  color: #e5e7eb;
+}
+.home-section.wg-about-avatar h1,
+.home-section.wg-about-avatar h2,
+.home-section.wg-about-avatar h3 {
+  color: #ffffff;
 }
 
 #profile .network-icon {
@@ -69,7 +96,7 @@ ul.network-icon .big-icon {
   width: 45em;
   max-width: calc(100% - 4em);
   margin: 0 auto;
-}
+  }
 
 .home-section > .content > :last-child {
   margin-bottom: 0;
@@ -114,4 +141,23 @@ ul.network-icon .big-icon {
 
 .wg-about .portrait-title h3 {
   font-size: 0.8rem;
+}
+
+// 기본 버튼 색 (파란색 톤)
+.btn-primary, a.btn.btn-primary {
+  background-color: #60a5fa;
+  border-color: #60a5fa;
+  color: #0b1020;
+}
+.btn-primary:hover, a.btn.btn-primary:hover {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+  color: #0b1020;
+}
+
+// 히어로 섹션의 CTA 버튼 여백
+.home-section.wg-about-avatar .btn {
+  margin-top: 1.25rem;
+  padding: 0.6rem 1.1rem;
+  border-radius: 10px;
 }

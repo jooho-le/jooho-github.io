@@ -18,10 +18,12 @@ design:
   css_class: fullscreen
   # 배경 색상 (필요 시 변경)
   background:
-    color: '#ffffff'
+    color: '#111418'
+    text_color_light: true
 ---
 
-안녕하세요! 나를 한 줄로 소개하는 문장을 적어주세요.
-{style="font-size: 1.05rem;"}
+안녕하세요! 전북대학교 컴퓨터공학부 학부생이자 메디컬AI 연계전공생입니다.
+하고 싶은 것들은 다 해야 직성이 풀리는 사람입니다. 앞으로도 메디컬AI 연구를 수행하며 특히 뇌신경 분야에서 독보적인 능력을 가진 전문가가 되고 싶습니다.
+{style="font-size: 1.05rem; line-height: 1.9;"}
 
-[이력서 보기](/about/) · [프로젝트 보기](#portfolio)
+<a class="btn btn-primary" href="#portfolio">더 알아보기 →</a>
