@@ -29,13 +29,13 @@ content:
     - name: All
       tag: '*'
     - name: Web service
-      tag: Web service
+      tag: 'Web service'
     - name: App service
-      tag: App service
+      tag: 'App service'
     - name: Data analysis
-      tag: Data analysis
+      tag: 'Data analysis'
     - name : AI
-      tag : AI
+      tag : 'AI'
 
 design:
   columns: '1'

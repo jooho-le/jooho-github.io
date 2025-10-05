@@ -8,7 +8,12 @@ date: 2024-11-01 - 2024.12.28
 # - 이미지 파일을 이 폴더(`content/project/cartoon/`)에 넣고 아래 파일명을 지정하세요.
 # - 예: featured.jpg 를 추가하면 카드/상세에 썸네일로 표시됩니다.
 image:
-  filename: featured.jpg  # 여기에 파일명 입력
+  filename: featured.png  # 여기에 파일명 입력
   focal_point: Center     # Center, TopLeft, BottomRight 등
   preview_only: false     # true면 목록에만 사용
+links:
+  - icon: github
+    icon_pack: fab
+    name: GitHub
+    url: https://github.com/jooho-le/CampusLink
 ---
