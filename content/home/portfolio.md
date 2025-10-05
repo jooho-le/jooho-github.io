@@ -8,10 +8,10 @@ widget: portfolio
 headless: true
 
 # Order that this section appears on the page.
-weight: 20
+weight: 90
 
-title: ''
-subtitle: ''
+title: '프로젝트'
+subtitle: '제가 수행한 주요 프로젝트를 아래 카드에서 간단히 소개합니다.'
 
 content:
   # Page type to display. E.g. project.
@@ -36,7 +36,7 @@ content:
       tag: NLP
 
 design:
-  columns: '1'
+  columns: '3'
   view: masonry
   flip_alt_rows: true
   background: {}
