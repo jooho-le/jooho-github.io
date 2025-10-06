@@ -4,12 +4,21 @@
 # - `weight` 값이 작을수록 왼쪽(상단에서 먼저) 배치됩니다.
 
 main:
-  - name: 홈
-    url: /
+  - name: About
+    url: /about/
     weight: 10
-  - name: 소개
-    url: about/
+  - name: Project
+    url: /project/
     weight: 20
-  - name: 프로젝트
-    url: /#portfolio
+  - name: Qualifications
+    url: /qualifications/
     weight: 30
+  - name: Award
+    url: /award/
+    weight: 40
+  - name: Skills
+    url: /skills/
+    weight: 50
+  - name: Experience
+    url: /experience/
+    weight: 60

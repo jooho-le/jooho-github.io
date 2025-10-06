@@ -40,9 +40,9 @@ marketing:
 header:
   navbar:
     enable: true
-    align: r
-    show_logo: true
-    show_language: true
+    align: c
+    show_logo: false
+    show_language: false
     show_day_night: true
     show_search: true
     highlight_active_link: false
