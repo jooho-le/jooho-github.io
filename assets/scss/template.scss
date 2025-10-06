@@ -184,27 +184,18 @@ ul.network-icon .big-icon {
 }
 
 /* Awards 섹션 카드 그리드 */
-.awards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1rem;
-}
-.award-card {
+/* Awards(포트폴리오 위젯) 카드에서 제목만 보이게 */
+#awards .card-simple .card-image,
+#awards .card-simple figure,
+#awards .card-simple .article-metadata,
+#awards .card-simple .summary,
+#awards .card-simple .btn-links,
+#awards .card-simple .tags,
+#awards .card-simple .card-footer { display: none !important; }
+
+#awards .card-simple .article-title {
   display: block;
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 12px;
-  overflow: hidden;
-  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.08rem;
+  margin: 0.4rem 0;
 }
-.award-card img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  display: block;
-}
-.award-card .award-meta { padding: 0.8rem 1rem; }
-.award-card h3 { margin: 0 0 0.25rem; font-size: 1.05rem; color: #fff; }
-.award-card .org { margin: 0; font-size: 0.85rem; opacity: 0.8; }
-.award-card .desc { margin: 0.35rem 0 0; font-size: 0.92rem; }
-.award-card:hover { border-color: rgba(96,165,250,0.6); }
