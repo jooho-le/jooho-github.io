@@ -15,8 +15,7 @@ image:
 
 
 
-![발표 사진](stage.jpg)
-![시상 사진](award.jpg)
+![발표 사진](/uploads/awards/sw1.jpeg)
+![시상 사진](/uploads/awards/sw2.jpeg)
 
 관련 링크: [대회 페이지](https://csai.jbnu.ac.kr/bbs/csai/5289/355730/artclView.do)
-
