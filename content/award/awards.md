@@ -5,18 +5,18 @@ headless: true
 weight: 10
 
 title: 수상 내역
-subtitle: 각종 대회/공모전 수상
+subtitle: 대회/공모전 수상
 
 accomplishments:
-  - title: 교내 캡스톤 경진대회 대상
-    date: 2024-11-30
+  - title: 2024 METE MOBILITY 드론코딩 경진대회
+    date: 2024-10-03
+    organization: 전북대학교, 대한드론협회
+    url: 'https://eei.chonbuk.ac.kr/bbs/eei/4404/338337/artclView.do'
+    summary: 동상 수상
+  - title: 2025 JBNU SW/AI 경진대회 SW부분(전공팀)
+    date: 2025-06-05
     organization: 전북대학교
-    url: ''
-    summary: AI 서비스를 활용한 학내 편의 앱으로 종합 1위 수상.
-  - title: 데이터 해커톤 우수상
-    date: 2023-09-01
-    organization: OO 해커톤
-    url: ''
-    summary: 추천 시스템 성능 개선으로 상위 기록 달성.
+    url: 'https://csai.jbnu.ac.kr/bbs/csai/5289/355730/artclView.do'
+    summary: 은상 수상
 ---
 
