@@ -5,10 +5,7 @@ summary: 동상 수상
 date: 2024-10-03
 tags: [Drone, Competition]
 
-# 카드(목록)에서 사용할 대표 이미지. 같은 폴더에 파일을 두세요.
-image:
-  filename: dron1.jpeg
-  focal_point: Center
+# 대표 이미지는 사용하지 않습니다.
 
 ---
 
