@@ -7,10 +7,11 @@ tags: [AI, Competition]
 
 ---
 
-상세 내용 예시: 문제 정의, 해결 방법, 팀 구성, 내가 기여한 부분, 결과/지표 등을 작성하세요.
+프로젝트 "MEDI MATE"를 수행한 대회로 사회문제 해결을 위한 생성형 AI활용 SW개발 부문으로 참여하여 
+진행한 대회입니다.
 
-![발표 사진](swai1.jpeg)
-![시상 사진](swai2.jpeg)
-![팀 사진](swai3.jpeg)
+![발표 사진](/uploads/awards/swai1.jpeg)
+![시상 사진](/uploads/awards/swai2.jpeg)
+![팀 사진](/uploads/awards/swai3.jpeg)
 
 관련 링크: [대회 페이지](https://csai.jbnu.ac.kr/bbs/csai/5289/355730/artclView.do)
