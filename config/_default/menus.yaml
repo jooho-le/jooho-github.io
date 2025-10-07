@@ -4,6 +4,9 @@
 # - `weight` 값이 작을수록 왼쪽(상단에서 먼저) 배치됩니다.
 
 main:
+  - name: Home
+    url: /
+    weight: 5
   - name: About
     url: /about/
     weight: 10
