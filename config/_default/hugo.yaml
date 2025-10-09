@@ -24,7 +24,7 @@ cascade:
 
 defaultContentLanguage: ko  # 기본 언어(한국어)
 hasCJKLanguage: true        # 한중일 문자 표시 최적화
-defaultContentLanguageInSubdir: false
+defaultContentLanguageInSubdir: true
 removePathAccents: true
 
 ############################

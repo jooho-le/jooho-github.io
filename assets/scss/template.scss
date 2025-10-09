@@ -41,6 +41,9 @@ body {
 .navbar {
   box-shadow: none !important; // 그림자 제거
   background-color: #6b7280 !important; // 회색 헤더
+  position: sticky;
+  top: 0;
+  z-index: 1040; // 모달보다 낮고 컨텐츠보다 높게
 }
 .navbar .navbar-brand,
 .navbar .nav-link,
