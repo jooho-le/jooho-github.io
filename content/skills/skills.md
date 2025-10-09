@@ -12,13 +12,16 @@ design:
 
 ---
 
-프론트엔드: React, Next.js, TypeScript, Tailwind CSS
+Collaboration : Notion, GitHub, Google Drive 
 
-백엔드: Node.js, Express, FastAPI, Django
+Design : Figma, Drow.io
 
-데이터/AI: Python, Pandas, scikit-learn, PyTorch
+OA : Word, Excel, PowerPoint
 
-클라우드/DevOps: Docker, GitHub Actions, AWS (EC2/S3)
+Language : Java, C, C++, C#, JAvaScript, TypeScript, Python, Kotiln, SQL, CSS, HTML, Arduino
 
-도구: Git, Figma, Postman, Notion
+Tool : Unity, Eclipse, IntelliJ, Visual Studio, Visual Studio Code, Android Sutdio
+
+Tech Stack : Flask, Django, Firebase, FastAPI, Node.js, MongoDB, MySQL, Pandas
+
 
