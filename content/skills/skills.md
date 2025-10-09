@@ -4,8 +4,8 @@ widget: blank
 headless: true
 weight: 10
 
-title: 기술 스택
-subtitle: 주 사용 기술과 도구들
+title: Skills
+subtitle: 사용 기술 및 도구
 
 design:
   columns: '1'

@@ -13,8 +13,7 @@ experience:
     company: 코드클럽한국위원회
     company_url: 'https://codeclubkorea.org/'
     location: Jeonju, Korea
-    date_start: '2024-07-01'
-    date_end: '2024-08-31'
+    dat : 2024, 2025
     description: |
       - 백엔드 API 개발 및 성능 개선
       - 서비스 모니터링 지표 설계
