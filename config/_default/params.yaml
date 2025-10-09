@@ -42,7 +42,7 @@ header:
     enable: true
     align: c
     show_logo: false
-    show_language: false
+    show_language: true
     show_day_night: true
     show_search: true
     highlight_active_link: false
@@ -95,7 +95,7 @@ features:
       category: ''
       category_id: ''
   search:
-    provider: ''  # 기본 검색 비활성(공백). "algolia" 등 설정 가능
+    provider: wowchemy  # 기본 내장 검색(Fuse.js 기반)
     algolia:
       app_id: ''
       api_key: ''

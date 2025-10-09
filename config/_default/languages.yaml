@@ -9,13 +9,10 @@ ko:
   #contentDir: content
 
 # 참고) 영어를 추가해 2개 언어로 운영하려면 아래 예시를 참고해 추가하세요.
-#en:
-#  languageCode: en-us
-#  contentDir: content/en  # 영어 컨텐츠는 content/en/ 에 위치
-#  params:
-#    description: Site description in English...
-#  menu:
-#    main:
-#      - name: Home
-#        url: '/'
-#        weight: 10
+en:
+  languageCode: en-us
+  # 같은 콘텐츠 구조를 공유하도록 contentDir를 기본값으로 둡니다.
+  # 별도 영어 컨텐츠를 만들려면 content/en 를 만들고 아래 줄을 해제하세요.
+  #contentDir: content/en
+  params:
+    description: Personal portfolio in English.
