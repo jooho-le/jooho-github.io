@@ -8,10 +8,10 @@ widget: portfolio
 headless: true
 
 # Order that this section appears on the page.
-weight: 90
+weight: 50
 
-title: '프로젝트'
-subtitle: '제가 수행한 주요 프로젝트를 아래 카드에서 간단히 소개합니다.'
+title: 'Projects'
+subtitle: '대표 프로젝트 카드(이미지·제목만 표시)'
 
 content:
   # Page type to display. E.g. project.
