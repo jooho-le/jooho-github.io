@@ -22,21 +22,21 @@ content:
         label: '더 알아보기'
         url: '/about/'
 
-  - title: 'Activity'
-    content: '동아리·수상·자격증 등 활동 하이라이트 문구를 입력하세요.'
-    background:
-      image: '/uploads/slider/slide2.jpg'
-      brightness: 0.35
-    cta:
-      label: 'Activity'
-      url: '/experience/'
+    - title: 'Activity'
+      content: '동아리·수상·자격증 등 활동 하이라이트 문구를 입력하세요.'
+      background:
+        image: '/uploads/slider/slide2.jpg'
+        brightness: 0.35
+      cta:
+        label: 'Activity'
+        url: '/experience/'
 
-  - title: 'Projects'
-    content: '최근 진행 프로젝트를 확인해 보세요.'
-    background:
-      image: '/uploads/slider/slide3.jpg'
-      brightness: 0.35
-    cta:
-      label: 'Projects'
-      url: '/#portfolio'
+    - title: 'Projects'
+      content: '최근 진행 프로젝트를 확인해 보세요.'
+      background:
+        image: '/uploads/slider/slide3.jpg'
+        brightness: 0.35
+      cta:
+        label: 'Projects'
+        url: '/#portfolio'
 ---
