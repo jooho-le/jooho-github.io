@@ -5,7 +5,7 @@ headless: true
 weight: 10
 
 title: 수상 내역
-subtitle: 카드를 클릭하면 상세 내용과 사진을 볼 수 있어요.
+subtitle: 카드를 클릭하면 상세 내용과 사진을 볼 수 있습니다.
 
 content:
   # award 타입의 페이지만 카드로 수집해 보여줍니다.
