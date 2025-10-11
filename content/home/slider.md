@@ -9,17 +9,18 @@ weight: 20
 title: ''
 subtitle: ''
 
-slides:
-  - title: 'Medical AI'
-    content: '의료 인공지능 관련 연구/프로젝트 개요 문구를 입력하세요.'
-    # 슬라이드 배경 이미지 경로(정적 폴더 기준)
-    background:
-      image: '/uploads/slider/slide1.jpg'
-      # 어둡게 오버레이 적용 비율(0~1)
-      brightness: 0.35
-    cta:
-      label: '더 알아보기'
-      url: '/about/'
+content:
+  slides:
+    - title: 'Medical AI'
+      content: '의료 인공지능 관련 연구/프로젝트 개요 문구를 입력하세요.'
+      # 슬라이드 배경 이미지 경로(정적 폴더 기준)
+      background:
+        image: '/uploads/slider/slide1.jpg'
+        # 어둡게 오버레이 적용 비율(0~1)
+        brightness: 0.35
+      cta:
+        label: '더 알아보기'
+        url: '/about/'
 
   - title: 'Activity'
     content: '동아리·수상·자격증 등 활동 하이라이트 문구를 입력하세요.'
@@ -39,4 +40,3 @@ slides:
       label: 'Projects'
       url: '/#portfolio'
 ---
-
