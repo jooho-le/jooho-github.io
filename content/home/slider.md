@@ -1,5 +1,5 @@
-# 홈 배경 슬라이더 (아주 쉽게 편집하기)
-# 사용법(초등학생 모드)
+# 홈 배경 슬라이더
+# 사용법
 # 1) 사진 넣기: Mac/Windows에서 `static/uploads/slider/` 폴더에 사진 파일을 넣어요.
 #    - 예: slide1.jpg, slide2.jpg, slide3.jpg
 # 2) 아래 slides에서 '제목/설명/버튼링크'만 바꿔요.

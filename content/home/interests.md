@@ -8,44 +8,34 @@ headless: true
 weight: 30
 
 title: 'My Interests'
-subtitle: '여기에 간단한 소개 문구를 입력하세요.'
+subtitle: '하고싶은 일들을 하며 성장해 나가는 사람입니다.'
 
 features:
-  # [관심사 1] — 여기를 수정하세요
-  - icon: brain           # 아이콘 이름(예: brain)
-    icon_pack: fas
-    name: '여기에 제목(예: Brain, Medical Science)'
-    description: '여기에 설명 한 줄.'
 
-  # [관심사 2]
-  - icon: robot
+  - icon: robot          
     icon_pack: fas
-    name: '여기에 제목(예: 인공지능)'
-    description: '설명 한 줄.'
+    name: 'Robot'
+    description: '기계공학과 iot에 관심이 많습니다.'
 
-  # [관심사 3]
-  - icon: hospital
+  - icon: AI
     icon_pack: fas
-    name: '여기에 제목(예: Medical AI)'
-    description: '설명 한 줄.'
+    name: Artificial Intelligence (AI)
+    description: 'AI모델학습과 AI활용 서비스개발에 관심을 가지고 공부중입니다.'
 
-  # [관심사 4]
   - icon: chart-line
     icon_pack: fas
-    name: '여기에 제목(예: Data Science)'
-    description: '설명 한 줄.'
+    name: 'Data Engineering
+    description: '데이터를 분석하고 설계하는 것에 관심이 있습니다.'
 
-  # [관심사 5]
   - icon: code
     icon_pack: fas
-    name: '여기에 제목(예: 개발)'
+    name: '예: 개발'
     description: '설명 한 줄.'
 
-  # [관심사 6]
   - icon: project-diagram
     icon_pack: fas
-    name: '여기에 제목(예: Algorithm)'
-    description: '설명 한 줄.'
+    name: 'Full-Stack Developer'
+    description: '앱웹서비스 풀스택 개발을 주로 진행합니다.'
 
 design:
   columns: '3'
