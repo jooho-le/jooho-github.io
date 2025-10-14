@@ -16,12 +16,12 @@ subtitle: ''
 content:
   slides:
     # [슬라이드 1] — 여기를 수정하세요
-    - title: '여기에 제목(예: Medical AI)'
-      content: '여기에 한 줄 설명을 적어주세요.'
+    - title: 'Home'
+      content: '이주호의  홈페이지에 오신걸 환영합니다.'
       # 슬라이드 배경 이미지 (파일명만 바꿔요)
       background:
-        image: '/uploads/slider/slide1.jpg'  # 예: /uploads/slider/내사진1.jpg
-        brightness: 0.35                      # 화면 어둡기(0~1)
+        image: '/uploads/slider/slide1.jpg'  
+        brightness: 0.35                    
       cta:
         label: '버튼 이름(선택)'              # 예: 더 알아보기
         url: '/about/'                        # 버튼을 누르면 갈 주소

@@ -1,8 +1,3 @@
-# 관심사(아이콘 6개) — 아주 쉽게 편집하기
-# 사용법
-# 1) 아래 features 목록에서 'name'과 'description'만 바꾸면 끝!
-# 2) 아이콘은 Font Awesome 이름을 써요(예: brain, robot, hospital 등).
-# 3) 더 추가/삭제하려면 항목(대시로 시작하는 한 덩어리)을 복사/삭제하세요.
 widget: features
 headless: true
 weight: 30
