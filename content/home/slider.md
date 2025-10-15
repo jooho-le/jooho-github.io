@@ -19,7 +19,10 @@ content:
   slides:
     # [슬라이드 1] — Home
     - title: 'Home'
-      content: '홈으로 이동합니다.'
+      content: |-
+        홈으로 이동합니다.
+        
+        <a class="btn btn-primary" href="./">Home →</a>
       # 슬라이드 배경 이미지 (파일명만 바꿔요)
       background:
         image: 'uploads/slider/slider1.jpg'  
@@ -30,7 +33,10 @@ content:
 
     # [슬라이드 2] — About
     - title: 'About'
-      content: '자기소개와 프로필을 확인해 보세요.'
+      content: |-
+        자기소개와 프로필을 확인해 보세요.
+        
+        <a class="btn btn-primary" href="about/">About →</a>
       background:
         image: 'uploads/slider/slider2.jpg'
         brightness: 0.35
@@ -40,7 +46,10 @@ content:
 
     # [슬라이드 3] — Projects
     - title: 'Projects'
-      content: '홈의 프로젝트 섹션으로 이동합니다.'
+      content: |-
+        홈의 프로젝트 섹션으로 이동합니다.
+        
+        <a class="btn btn-primary" href="#portfolio">Projects →</a>
       background:
         image: 'uploads/slider/slider3.jpg'
         brightness: 0.35
@@ -50,7 +59,10 @@ content:
 
     # [슬라이드 4] — Qualifications
     - title: 'Qualifications'
-      content: '보유 자격증 목록을 볼 수 있습니다.'
+      content: |-
+        보유 자격증 목록을 볼 수 있습니다.
+        
+        <a class="btn btn-primary" href="qualifications/">Qualifications →</a>
       background:
         image: 'uploads/slider/slider2.jpg'
         brightness: 0.35
@@ -60,7 +72,10 @@ content:
 
     # [슬라이드 5] — Award
     - title: 'Award'
-      content: '수상 내역을 확인해 보세요.'
+      content: |-
+        수상 내역을 확인해 보세요.
+        
+        <a class="btn btn-primary" href="award/">Award →</a>
       background:
         image: 'uploads/slider/slider3.jpg'
         brightness: 0.35
@@ -70,7 +85,10 @@ content:
 
     # [슬라이드 6] — Skills
     - title: 'Skills'
-      content: '기술 스택과 도구들을 정리했습니다.'
+      content: |-
+        기술 스택과 도구들을 정리했습니다.
+        
+        <a class="btn btn-primary" href="skills/">Skills →</a>
       background:
         image: 'uploads/slider/slider1.jpg'
         brightness: 0.35
@@ -80,7 +98,10 @@ content:
 
     # [슬라이드 7] — Experience
     - title: 'Experience'
-      content: '활동/경험 전체 목록으로 이동합니다.'
+      content: |-
+        활동/경험 전체 목록으로 이동합니다.
+        
+        <a class="btn btn-primary" href="experience/">Experience →</a>
       background:
         image: 'uploads/slider/slider2.jpg'
         brightness: 0.35
