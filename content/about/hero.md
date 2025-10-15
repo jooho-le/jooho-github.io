@@ -44,4 +44,3 @@ subtitle: ''
     </div>
   </div>
 </div>
-

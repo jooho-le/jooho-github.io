@@ -25,7 +25,7 @@ content:
         <a class="btn btn-primary" href="./">Home →</a>
       # 슬라이드 배경 이미지 (파일명만 바꿔요)
       background:
-        image: 'upload_slider/slider1.jpg'  
+        image: 'uploads/slider/slider1.jpg'  
         brightness: 0.35                    
       cta:
         label: 'Home'
@@ -38,7 +38,7 @@ content:
         
         <a class="btn btn-primary" href="about/">About →</a>
       background:
-        image: 'upload_slider/slider2.jpg'
+        image: 'uploads/slider/slider2.jpg'
         brightness: 0.35
       cta:
         label: 'About'
@@ -51,7 +51,7 @@ content:
         
         <a class="btn btn-primary" href="#portfolio">Projects →</a>
       background:
-        image: 'upload_slider/slider3.jpg'
+        image: 'uploads/slider/slider3.jpeg'
         brightness: 0.35
       cta:
         label: 'Projects'
@@ -64,7 +64,7 @@ content:
         
         <a class="btn btn-primary" href="qualifications/">Qualifications →</a>
       background:
-        image: 'upload_slider/slider2.jpg'
+        image: 'uploads/slider/slider2.jpg'
         brightness: 0.35
       cta:
         label: 'Qualifications'
@@ -77,7 +77,7 @@ content:
         
         <a class="btn btn-primary" href="award/">Award →</a>
       background:
-        image: 'upload_slider/slider3.jpg'
+        image: 'uploads/slider/slider3.jpeg'
         brightness: 0.35
       cta:
         label: 'Award'
@@ -90,7 +90,7 @@ content:
         
         <a class="btn btn-primary" href="skills/">Skills →</a>
       background:
-        image: 'upload_slider/slider1.jpg'
+        image: 'uploads/slider/slider1.jpg'
         brightness: 0.35
       cta:
         label: 'Skills'
@@ -103,7 +103,7 @@ content:
         
         <a class="btn btn-primary" href="experience/">Experience →</a>
       background:
-        image: 'upload_slider/slider2.jpg'
+        image: 'uploads/slider/slider2.jpg'
         brightness: 0.35
       cta:
         label: 'Experience'
