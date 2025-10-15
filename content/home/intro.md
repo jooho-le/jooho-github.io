@@ -25,4 +25,4 @@ design:
 안녕하세요. 전북대학교 기계설계공학부, 컴퓨터인공지능공학부를 전공하고 있는 학부생입니다.
 앱웹 풀스택 개발, 데이터 엔지니어랑, AI학습에 관심을 가지고 프로젝트들을 진행하고있습니다. 
 
-<a class="btn btn-primary" href="#portfolio">더 알아보기 →</a>
+<a class="btn btn-primary" href="/about/">더 알아보기 →</a>
