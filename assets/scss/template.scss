@@ -225,6 +225,26 @@ ul.network-icon .big-icon {
 .feature-item h3 { margin: 0.4rem 0 0.3rem; font-size: 1.05rem; }
 .feature-item p { margin: 0; opacity: 0.85; font-size: 0.95rem; }
 
+/* About page hero layout */
+.about-hero {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+.about-left { text-align: center; }
+.about-avatar {
+  width: 260px; height: 260px; border-radius: 50%; object-fit: cover;
+  display: block; margin: 0 auto 0.6rem auto;
+}
+.about-role { opacity: 0.9; margin-bottom: 0.6rem; }
+.about-social .btn { margin: 0 0.25rem; }
+.about-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+.about-columns h3 { margin-top: 0; }
+@media (max-width: 900px) {
+  .about-hero { grid-template-columns: 1fr; }
+}
+
 /* Awards 섹션 카드 그리드 */
 /* Awards(포트폴리오 위젯) 카드에서 제목만 보이게 */
 #awards .card-simple .card-image,
