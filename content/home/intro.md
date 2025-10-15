@@ -8,7 +8,7 @@ widget: about.avatar
 headless: true
 
 # 표시 순서 (숫자가 작을수록 위에 배치)
-weight: 10
+weight: 25
 
 # 표시할 작성자(프로필) ID - `content/authors/` 내부 폴더명
 author: admin
