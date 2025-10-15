@@ -1,11 +1,6 @@
-widget: features
-headless: true
-weight: 30
-
 title: 'My Interests'
 subtitle: '하고싶은 일들을 하며 성장해 나가는 사람입니다.'
 
-features:
 
   - icon: robot          
     icon_pack: fas

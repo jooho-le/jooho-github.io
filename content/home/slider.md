@@ -1,3 +1,4 @@
+---
 # 홈 배경 슬라이더
 # 사용법
 # 1) 사진 넣기: Mac/Windows에서 `static/uploads/slider/` 폴더에 사진 파일을 넣어요.
