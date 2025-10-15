@@ -8,7 +8,7 @@ title: 'My Interests'
 subtitle: '저는 좋아하는 것들로 일상을 채우고, 발전하고 싶어하는 사람입니다.'
 
 design:
-  columns: '1'
+  columns: '3'
 ---
 
 <div class="features-grid">
