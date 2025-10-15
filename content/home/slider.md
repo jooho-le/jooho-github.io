@@ -8,6 +8,7 @@
 # 3) 슬라이드 더 만들고 싶으면 맨 아래 항목 하나를 복사해서 붙여넣기!
 # 4) 삭제하고 싶으면 해당 슬라이드 덩어리를 통째로 지워요.
 widget: slider
+active: true
 headless: true
 weight: 10
 
