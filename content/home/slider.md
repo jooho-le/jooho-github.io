@@ -17,34 +17,74 @@ subtitle: ''
 
 content:
   slides:
-    # [슬라이드 1] — 가장 상단 이미지 (제목/설명만 수정)
+    # [슬라이드 1] — Home
     - title: 'Home'
-      content: '홈 상단 소개 한 줄을 적어주세요.'
+      content: '홈으로 이동합니다.'
       # 슬라이드 배경 이미지 (파일명만 바꿔요)
       background:
         image: 'uploads/slider/slider1.jpg'  
         brightness: 0.35                    
       cta:
-        label: '더 알아보기'
-        url: 'about/'
+        label: 'Home'
+        url: './'
 
-    # [슬라이드 2] — 1화면 아래 이미지 (제목/설명만 수정)
-    - title: 'Preview'
-      content: '소개/활동 미리보기 한 줄.'
+    # [슬라이드 2] — About
+    - title: 'About'
+      content: '자기소개와 프로필을 확인해 보세요.'
       background:
         image: 'uploads/slider/slider2.jpg'
         brightness: 0.35
       cta:
-        label: 'Activity'
-        url: 'experience/'
+        label: 'About'
+        url: 'about/'
 
-    # [슬라이드 3] — 프로젝트 안내 이미지
+    # [슬라이드 3] — Projects
     - title: 'Projects'
-      content: '아래에서 프로젝트를 확인해 보세요.'
+      content: '홈의 프로젝트 섹션으로 이동합니다.'
       background:
         image: 'uploads/slider/slider3.jpg'
         brightness: 0.35
       cta:
         label: 'Projects'
         url: '#portfolio'
+
+    # [슬라이드 4] — Qualifications
+    - title: 'Qualifications'
+      content: '보유 자격증 목록을 볼 수 있습니다.'
+      background:
+        image: 'uploads/slider/slider2.jpg'
+        brightness: 0.35
+      cta:
+        label: 'Qualifications'
+        url: 'qualifications/'
+
+    # [슬라이드 5] — Award
+    - title: 'Award'
+      content: '수상 내역을 확인해 보세요.'
+      background:
+        image: 'uploads/slider/slider3.jpg'
+        brightness: 0.35
+      cta:
+        label: 'Award'
+        url: 'award/'
+
+    # [슬라이드 6] — Skills
+    - title: 'Skills'
+      content: '기술 스택과 도구들을 정리했습니다.'
+      background:
+        image: 'uploads/slider/slider1.jpg'
+        brightness: 0.35
+      cta:
+        label: 'Skills'
+        url: 'skills/'
+
+    # [슬라이드 7] — Experience
+    - title: 'Experience'
+      content: '활동/경험 전체 목록으로 이동합니다.'
+      background:
+        image: 'uploads/slider/slider2.jpg'
+        brightness: 0.35
+      cta:
+        label: 'Experience'
+        url: 'experience/'
 ---
