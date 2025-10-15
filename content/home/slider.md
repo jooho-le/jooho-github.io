@@ -21,29 +21,29 @@ content:
       content: '홈 상단 소개 한 줄을 적어주세요.'
       # 슬라이드 배경 이미지 (파일명만 바꿔요)
       background:
-        image: '/uploads/slider/slider1.jpg'  
+        image: 'uploads/slider/slider1.jpg'  
         brightness: 0.35                    
       cta:
         label: '더 알아보기'
-        url: '/about/'
+        url: 'about/'
 
     # [슬라이드 2] — 1화면 아래 이미지 (제목/설명만 수정)
     - title: 'Preview'
       content: '소개/활동 미리보기 한 줄.'
       background:
-        image: '/uploads/slider/slider2.jpg'
+        image: 'uploads/slider/slider2.jpg'
         brightness: 0.35
       cta:
         label: 'Activity'
-        url: '/experience/'
+        url: 'experience/'
 
     # [슬라이드 3] — 프로젝트 안내 이미지
     - title: 'Projects'
       content: '아래에서 프로젝트를 확인해 보세요.'
       background:
-        image: '/uploads/slider/slider3.jpg'
+        image: 'uploads/slider/slider3.jpg'
         brightness: 0.35
       cta:
         label: 'Projects'
-        url: '/#portfolio'
+        url: '#portfolio'
 ---

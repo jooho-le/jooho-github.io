@@ -14,8 +14,8 @@ design:
 <div class="features-grid">
   <div class="feature-item">
     <i class="fas fa-brain"></i>
-    <h3>Brain, Medical Science</h3>
-    <p>의과학/의공학/뇌 전반에 관심이 많습니다.</p>
+    <h3>Brain</h3>
+    <p>의료 AI/서비스, 생체부문에 관심이 많습니다.</p>
   </div>
   <div class="feature-item">
     <i class="fas fa-robot"></i>
