@@ -12,7 +12,7 @@ subtitle: ''
     <h2>이주호</h2>
     <div class="about-role">풀스택 개발, 데이터 엔지니어링</div>
     <div class="about-social">
-      <a href="mailto:your@email.com" class="btn">메일</a>
+      <a href="mailto:wngh9696@naver.com" class="btn">메일</a>
       <a href="https://github.com/jooho-le" target="_blank" rel="noopener" class="btn">GitHub</a>
     </div>
   </div>
