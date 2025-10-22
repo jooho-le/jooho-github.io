@@ -14,6 +14,7 @@ subtitle: ''
     <div class="about-social">
       <a href="mailto:wngh9696@naver.com" class="btn">메일</a>
       <a href="https://github.com/jooho-le" target="_blank" rel="noopener" class="btn">GitHub</a>
+      <li>Phon : 010-6713-9102</li>
     </div>
   </div>
   <div class="about-right">
