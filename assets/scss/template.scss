@@ -243,7 +243,8 @@ ul.network-icon .big-icon {
 }
 
 /* Bars (progress) */
-.bars { display: grid; gap: 1.5rem; }
+/* Add extra bottom space so adjacent sections (e.g., Tech -> Skills) don't crowd/overlap visually */
+.bars { display: grid; gap: 1.5rem; margin-bottom: 3rem; }
 .bars-4col { grid-template-columns: repeat(4, 1fr); }
 .bars-2col { grid-template-columns: repeat(2, 1fr); }
 .bars h4 { margin: 0 0 0.6rem; letter-spacing: 0.02em; }
