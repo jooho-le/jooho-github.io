@@ -14,7 +14,6 @@ subtitle: ''
     <div class="about-social">
       <a href="mailto:your@email.com" class="btn">메일</a>
       <a href="https://github.com/jooho-le" target="_blank" rel="noopener" class="btn">GitHub</a>
-      <a href="/uploads/resume.pdf" target="_blank" rel="noopener" class="btn">CV</a>
     </div>
   </div>
   <div class="about-right">
