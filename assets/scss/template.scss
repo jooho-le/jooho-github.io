@@ -98,8 +98,10 @@ ul.network-icon .big-icon {
 .home-section > .content {
   /* 넓은 레이아웃: 콘텐츠 폭을 더 크게 */
   width: auto;
-  max-width: 1200px; /* 필요 시 1280px 로 조정 가능 */
+  max-width: 1600px; /* 더 넓게 펼쳐서 좌우 여백 축소 */
   margin: 0 auto;
+  padding-left: 3vw;
+  padding-right: 3vw;
 }
 
 .home-section > .content > :last-child {
@@ -107,15 +109,33 @@ ul.network-icon .big-icon {
 }
 
 .home-section header {
-  margin-bottom: 1em;
+  /* 섹션 제목과 내용 사이 간격 확장 */
+  margin-bottom: 2rem;
 }
 
 // 섹션 컨테이너 폭을 확대하여 가로로 꽉 차게 보이도록
 @media (min-width: 992px) {
-  .home-section .container { max-width: 1200px; }
+  .home-section .container { max-width: 1600px; padding-left: 3vw; padding-right: 3vw; }
 }
 @media (min-width: 1200px) {
-  .home-section .container { max-width: 1200px; }
+  .home-section .container { max-width: 1600px; padding-left: 3vw; padding-right: 3vw; }
+}
+
+/* Blank 위젯(About me, 커스텀 섹션 등) 가독성 향상 */
+.home-section.wg-blank {
+  /* 위아래 여백을 넉넉히 */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.home-section.wg-blank p {
+  font-size: 1.05rem; /* 본문 크게 */
+  line-height: 1.9;   /* 행간 넓게 */
+  color: rgba(255,255,255,0.92); /* 어두운 배경에서 가독성 향상 */
+}
+.home-section.wg-blank h1,
+.home-section.wg-blank h2,
+.home-section.wg-blank h3 {
+  color: #fff;
 }
 
 // Custom avatar size on homepage
@@ -243,14 +263,22 @@ ul.network-icon .big-icon {
 }
 
 /* Bars (progress) */
-/* Add extra bottom space so adjacent sections (e.g., Tech -> Skills) don't crowd/overlap visually */
-.bars { display: grid; gap: 1.5rem; margin-bottom: 3rem; }
+/* Tech/Skills 간 여백 보강 및 가독성 향상 */
+.bars { display: grid; gap: 2rem; margin: 0.75rem 0 3rem; }
 .bars-4col { grid-template-columns: repeat(4, 1fr); }
 .bars-2col { grid-template-columns: repeat(2, 1fr); }
 .bars h4 { margin: 0 0 0.6rem; letter-spacing: 0.02em; }
 .bar { position: relative; background: rgba(255,255,255,0.08); height: 10px; border-radius: 6px; margin: 0.6rem 0 1.1rem; }
 .bar label { display: block; margin-bottom: 0.35rem; font-size: 0.9rem; opacity: 0.9; }
 .bar span { position: absolute; left: 0; top: 0; bottom: 0; background: #60a5fa; border-radius: 6px; }
+
+/* 긴 섹션 제목(예: PROGRAMMING LANGUAGES) 줄바꿈/겹침 방지: 화면이 좁아지면 4열 -> 3열 -> 2열 */
+@media (max-width: 1280px) {
+  .bars-4col { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 900px) {
+  .bars-4col { grid-template-columns: repeat(2, 1fr); }
+}
 
 /* Education timeline */
 .timeline { position: relative; margin-left: 1rem; }
