@@ -9,17 +9,17 @@ title: 'Education'
   <div class="timeline-item">
     <div class="dot"></div>
     <div class="card">
-      <h3>M.S. in 전자.정보공학부(컴퓨터공학전공)</h3>
-      <div class="period">9월 2025 - 2월 2027</div>
-      <p>전북대학교 (학석사 연계 과정)</p>
+      <h3>이과</h3>
+      <div class="period">3월 2017 - 2월 2020</div>
+      <p>배문고등학교</p>
     </div>
   </div>
   <div class="timeline-item">
     <div class="dot"></div>
     <div class="card">
-      <h3>B.S. in 컴퓨터공학부</h3>
-      <div class="period">3월 2022 - 8월 2025</div>
-      <p>전북대학교 (JBNU) 컴퓨터공학부</p>
+      <h3>기계설계공학부(나노바이오기계시스템), 컴퓨터인공지능학부</h3>
+      <div class="period">3월 2021 - 재학중</div>
+      <p>전북대학교</p>
     </div>
   </div>
 </div>
