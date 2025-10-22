@@ -327,6 +327,7 @@ ul.network-icon .big-icon {
   border-radius: 14px;
   padding: 1.2rem;
 }
+.exp-card.text-only { grid-template-columns: 1fr; }
 .exp-media img { width: 100%; height: auto; border-radius: 10px; box-shadow: 0 6px 20px rgba(0,0,0,0.35); }
 .exp-body h3 { margin: 0 0 0.4rem; font-size: 1.4rem; }
 .exp-body p { margin: 0 0 0.8rem; opacity: 0.9; }
