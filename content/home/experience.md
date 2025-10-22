@@ -1,8 +1,9 @@
 ---
 # 홈에서 Experience(경험) 요약 보여주기
 widget: experience
+active: false
 headless: true
-weight: 60
+weight: 96
 
 title: 'Experience'
 subtitle: '전체 활동'
