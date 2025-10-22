@@ -1,7 +1,7 @@
 # Hugo 기본 설정 (KOR 주석)
 # - 사이트 제목/URL, 언어, 출력옵션 등 전역 설정을 담당합니다.
 
-title: 나의 포트폴리오 # 사이트 제목 (브라우저 탭/헤더)
+title: '이주호 | jooho-le.github.io' # 사이트 제목 (브라우저 탭/헤더)
 baseURL: 'https://jooho-le.github.io/jooho-github.io/' # 프로젝트 페이지 경로에 맞춤
 
 ############################
