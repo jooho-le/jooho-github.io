@@ -20,15 +20,17 @@ marketing:
   seo:
     site_type: Person
     local_business_type: ''
-    org_name: ''
-    description: 'A highly-customizable Hugo blog theme powered by Wowchemy website builder.'
-    twitter: 'GetResearchDev'
+    org_name: 'Jeonbuk National University'
+    description: '전북대학교 컴퓨터인공지능공학부 이주호 포트폴리오 — Medical AI, AI, Data Engineering, Development, Embedded. 전북대 이주호의 프로젝트와 활동 소개.'
+    twitter: ''
   analytics:
     google_analytics: ''
     baidu_tongji: ''
     google_tag_manager: ''
     microsoft_clarity: ''
   verification:
+    # Google Search Console에 사이트 추가 후 제공되는 값(예: abcdefghijklmn)을 넣으세요.
+    # meta name="google-site-verification" content="<이 값>"
     google: ''
     baidu: ''
 

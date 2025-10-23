@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Update this URL if your site domain changes
+Sitemap: https://JOHO.github.io/sitemap.xml
