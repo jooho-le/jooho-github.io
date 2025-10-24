@@ -2,7 +2,7 @@
 widget: blank
 headless: true
 weight: 60
-title: ''
+title: '연락처 · 위치'
 ---
 
 <div class="about-contact">
@@ -22,4 +22,3 @@ title: ''
     referrerpolicy="no-referrer-when-downgrade"
   ></iframe>
 </div>
-
