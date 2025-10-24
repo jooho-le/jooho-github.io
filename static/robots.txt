@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
 
-# Update this URL if your site domain changes
-Sitemap: https://JOHO.github.io/sitemap.xml
+# Use a relative sitemap path so it works for both
+# user sites and project sites on GitHub Pages
+Sitemap: /sitemap.xml

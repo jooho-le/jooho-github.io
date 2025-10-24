@@ -43,7 +43,7 @@ header:
   navbar:
     enable: true
     align: c
-    show_logo: false
+    show_logo: true
     show_language: true
     show_day_night: true
     show_search: true
