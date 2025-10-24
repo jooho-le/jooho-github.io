@@ -334,3 +334,18 @@ ul.network-icon .big-icon {
 @media (max-width: 900px) {
   .exp-card { grid-template-columns: 1fr; }
 }
+
+/* Overlay image cards */
+.overlay-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+.overlay-card {
+  position: relative;
+  background-image: var(--bg);
+  background-size: cover; background-position: center;
+  border-radius: 14px; overflow: hidden; min-height: 220px;
+  display: flex; align-items: flex-end; text-decoration: none;
+}
+.overlay-card .overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.1)); }
+.overlay-card .overlay-text { position: relative; padding: 1rem 1.1rem; color: #fff; }
+.overlay-card h3 { margin: 0 0 0.3rem; color: #fff; }
+.overlay-card p { margin: 0; opacity: 0.95; }
+@media (max-width: 900px) { .overlay-cards { grid-template-columns: 1fr; } }
