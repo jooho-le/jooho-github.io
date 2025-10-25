@@ -8,34 +8,8 @@ main:
     url: /
     weight: 5
   - name: About
-    identifier: about
     url: /about/
     weight: 10
-  # About dropdown items
-  - name: About · Summary
-    url: /about/#summary
-    parent: about
-    weight: 11
-  - name: About · Interests
-    url: /about/#interests
-    parent: about
-    weight: 12
-  - name: About · Skills
-    url: /about/#skills
-    parent: about
-    weight: 13
-  - name: About · Tech
-    url: /about/#tech
-    parent: about
-    weight: 14
-  - name: About · Education
-    url: /about/#education_timeline
-    parent: about
-    weight: 15
-  - name: About · Contact
-    url: /about/#contact_map
-    parent: about
-    weight: 16
   - name: Project
     url: /project/
     weight: 20
