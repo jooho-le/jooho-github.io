@@ -16,7 +16,7 @@ content:
         
         <a class="btn btn-primary" href="./">Home →</a>
       background:
-        image: slider1.jpg 
+        image: '/uploads/slider/slider1.jpg' 
         brightness: 0.35                    
       cta:
         label: 'Home'
@@ -29,7 +29,7 @@ content:
         
         <a class="btn btn-primary" href="about/">About →</a>
       background:
-        image: 'slider2.jpg'
+        image: '/uploads/slider/slider2.jpg'
         brightness: 0.35
       cta:
         label: 'About'
@@ -42,7 +42,7 @@ content:
         
         <a class="btn btn-primary" href="#portfolio">Projects →</a>
       background:
-        image: slider3.jpeg
+        image: '/uploads/slider/slider3.jpg'
         brightness: 0.35
       cta:
         label: 'Projects'
@@ -55,7 +55,7 @@ content:
         
         <a class="btn btn-primary" href="qualifications/">Qualifications →</a>
       background:
-        image: 'slider2.jpg'
+        image: '/uploads/slider/slider2.jpg'
         brightness: 0.35
       cta:
         label: 'Qualifications'
@@ -68,7 +68,7 @@ content:
         
         <a class="btn btn-primary" href="award/">Award →</a>
       background:
-        image: 'slider3.jpeg'
+        image: '/uploads/slider/slider3.jpg'
         brightness: 0.35
       cta:
         label: 'Award'
@@ -81,7 +81,7 @@ content:
         
         <a class="btn btn-primary" href="skills/">Skills →</a>
       background:
-        image: 'slider1.jpg'
+        image: '/uploads/slider/slider1.jpg'
         brightness: 0.35
       cta:
         label: 'Skills'
@@ -94,7 +94,7 @@ content:
         
         <a class="btn btn-primary" href="experience/">Experience →</a>
       background:
-        image: 'slider2.jpg'
+        image: '/uploads/slider/slider2.jpg'
         brightness: 0.35
       cta:
         label: 'Experience'
