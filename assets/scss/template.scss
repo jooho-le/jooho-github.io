@@ -215,6 +215,9 @@ ul.network-icon .big-icon {
   background: rgba(0,0,0,0.45);
   pointer-events: none; /* do not block clicks on controls */
 }
+/* Make sure slider arrows appear and are clickable above overlays */
+.wg-slider .carousel-control-next,
+.wg-slider .carousel-control-prev { z-index: 3; }
 .wg-slider .carousel-caption {
   text-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
