@@ -46,7 +46,7 @@ title: ''
       }
     }
 
-    // Event delegation as a last resort in case controls are re-rendered later
+    // Event delegation in case controls are re-rendered later
     document.addEventListener('click', function(e){
       var next = e.target.closest('.wg-slider .carousel-control-next');
       var prev = e.target.closest('.wg-slider .carousel-control-prev');
@@ -65,7 +65,6 @@ title: ''
     function waitForCarousel(){
       var el = document.querySelector('.wg-slider .carousel');
       if (el) { initCarousel(el); return; }
-      // poll up to 5 seconds as the theme may hydrate after DOM ready
       var tries = 0;
       var t = setInterval(function(){
         tries++;
@@ -82,3 +81,4 @@ title: ''
     }
   })();
 </script>
+

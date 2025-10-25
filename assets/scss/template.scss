@@ -121,23 +121,6 @@ ul.network-icon .big-icon {
   .home-section .container { max-width: 1600px; padding-left: 3vw; padding-right: 3vw; }
 }
 
-/* Blank 위젯(About me, 커스텀 섹션 등) 가독성 향상 */
-.home-section.wg-blank {
-  /* 위아래 여백을 넉넉히 */
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-.home-section.wg-blank p {
-  font-size: 1.05rem; /* 본문 크게 */
-  line-height: 1.9;   /* 행간 넓게 */
-  color: rgba(255,255,255,0.92); /* 어두운 배경에서 가독성 향상 */
-}
-.home-section.wg-blank h1,
-.home-section.wg-blank h2,
-.home-section.wg-blank h3 {
-  color: #fff;
-}
-
 // Custom avatar size on homepage
 .avatar {
   width: auto;
@@ -213,16 +196,14 @@ ul.network-icon .big-icon {
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.45);
-  pointer-events: none; /* do not block clicks on controls */
+  pointer-events: none; /* do not block clicks */
 }
-/* Make sure slider arrows appear and are clickable above overlays */
-.wg-slider .carousel-control-next,
-.wg-slider .carousel-control-prev { z-index: 3; }
 .wg-slider .carousel-caption {
   text-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
-/* Slider caption paragraph text justification */
-.wg-slider .carousel-caption p { text-align: justify; }
+/* Ensure arrows on top */
+.wg-slider .carousel-control-next,
+.wg-slider .carousel-control-prev { z-index: 3; }
 
 /* Slider height fallback to ensure visibility */
 .wg-slider .carousel-item {
@@ -248,8 +229,6 @@ ul.network-icon .big-icon {
 .feature-item i { font-size: 2.2rem; color: #3b82f6; margin-bottom: 0.5rem; }
 .feature-item h3 { margin: 0.4rem 0 0.3rem; font-size: 1.05rem; }
 .feature-item p { margin: 0; opacity: 0.85; font-size: 0.95rem; }
-/* Interests paragraph text justification */
-.features-grid .feature-item p { text-align: justify; }
 
 /* About page hero layout */
 .about-hero {
@@ -270,21 +249,8 @@ ul.network-icon .big-icon {
 @media (max-width: 900px) {
   .about-hero { grid-template-columns: 1fr; }
 }
-/* Home intro (about.avatar widget rendered on home) paragraph justification */
-.home-section.wg-about-avatar p { text-align: justify; }
-
-/* About contact + map (bottom section) */
-.about-contact { margin: 1.5rem 0 0.5rem; }
-.contact-list { list-style: none; padding: 0; margin: 0; }
-.contact-list li { display: flex; align-items: center; gap: 0.6rem; margin: 0.6rem 0; font-size: 1.05rem; }
-.contact-list i { width: 1.4rem; text-align: center; color: #9ec5ff; font-size: 1.2rem; }
-.contact-list a { color: #9ec5ff; text-decoration: none; }
-.contact-list a:hover { text-decoration: underline; }
-.about-map { margin-top: 1rem; }
-.about-map iframe { width: 100%; height: 420px; border: 0; border-radius: 12px; }
 
 /* Bars (progress) */
-/* Tech/Skills 간 여백 보강 및 가독성 향상 */
 .bars { display: grid; gap: 2rem; margin: 0.75rem 0 3rem; }
 .bars-4col { grid-template-columns: repeat(4, 1fr); }
 .bars-2col { grid-template-columns: repeat(2, 1fr); }
@@ -292,14 +258,6 @@ ul.network-icon .big-icon {
 .bar { position: relative; background: rgba(255,255,255,0.08); height: 10px; border-radius: 6px; margin: 0.6rem 0 1.1rem; }
 .bar label { display: block; margin-bottom: 0.35rem; font-size: 0.9rem; opacity: 0.9; }
 .bar span { position: absolute; left: 0; top: 0; bottom: 0; background: #60a5fa; border-radius: 6px; }
-
-/* 긴 섹션 제목(예: PROGRAMMING LANGUAGES) 줄바꿈/겹침 방지: 화면이 좁아지면 4열 -> 3열 -> 2열 */
-@media (max-width: 1280px) {
-  .bars-4col { grid-template-columns: repeat(3, 1fr); }
-}
-@media (max-width: 900px) {
-  .bars-4col { grid-template-columns: repeat(2, 1fr); }
-}
 
 /* Education timeline */
 .timeline { position: relative; margin-left: 1rem; }
@@ -325,42 +283,3 @@ ul.network-icon .big-icon {
   font-size: 1.08rem;
   margin: 0.4rem 0;
 }
-
-/* Experience cards on Home (Blank widget) */
-.exp-cards { display: grid; gap: 2.2rem; }
-.exp-card {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 1.5rem;
-  align-items: center;
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 14px;
-  padding: 1.2rem;
-}
-.exp-card.text-only { grid-template-columns: 1fr; }
-.exp-media img { width: 100%; height: auto; border-radius: 10px; box-shadow: 0 6px 20px rgba(0,0,0,0.35); }
-.exp-body h3 { margin: 0 0 0.4rem; font-size: 1.4rem; }
-.exp-body p { margin: 0 0 0.8rem; opacity: 0.9; }
-/* Experience card body paragraph justification */
-.exp-card .exp-body p { text-align: justify; }
-@media (max-width: 900px) {
-  .exp-card { grid-template-columns: 1fr; }
-}
-
-/* Overlay image cards */
-.overlay-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
-.overlay-card {
-  position: relative;
-  background-image: var(--bg);
-  background-size: cover; background-position: center;
-  border-radius: 14px; overflow: hidden; min-height: 220px;
-  display: flex; align-items: flex-end; text-decoration: none;
-}
-.overlay-card .overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.1)); }
-.overlay-card .overlay-text { position: relative; padding: 1rem 1.1rem; color: #fff; }
-.overlay-card h3 { margin: 0 0 0.3rem; color: #fff; }
-.overlay-card p { margin: 0; opacity: 0.95; }
-/* Overlay card text justification */
-.overlay-card .overlay-text p { text-align: justify; }
-@media (max-width: 900px) { .overlay-cards { grid-template-columns: 1fr; } }
