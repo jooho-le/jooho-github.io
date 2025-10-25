@@ -3,7 +3,6 @@ widget: blank
 headless: true
 weight: 70
 title: 'Highlights'
-subtitle: '이미지 오버레이 카드 뷰'
 ---
 
 <div class="overlay-cards">
