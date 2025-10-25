@@ -38,7 +38,7 @@ content:
         
         <a class="btn btn-primary" href="about/">About →</a>
       background:
-        image: '/home/slider/slider2.jpg'
+        image: '/uploads/slider/slider2.jpg'
         brightness: 0.35
       cta:
         label: 'About'

@@ -21,6 +21,11 @@ title: ''
           pause: false,
           wrap: true
         });
+        // Ensure the arrow controls work even if anchors are blocked or hashes are odd
+        var nextCtrl = el.querySelector('.carousel-control-next');
+        var prevCtrl = el.querySelector('.carousel-control-prev');
+        if (nextCtrl) nextCtrl.addEventListener('click', function(e){ e.preventDefault(); instance.next(); });
+        if (prevCtrl) prevCtrl.addEventListener('click', function(e){ e.preventDefault(); instance.prev(); });
         setInterval(function(){ instance.next(); }, 6000);
       } else {
         // Fallback: switch active slide with classes (no anchor clicks)
