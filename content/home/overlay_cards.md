@@ -11,7 +11,7 @@ subtitle: '이미지 오버레이 카드 뷰'
     <div class="overlay"></div>
     <div class="overlay-text">
       <h3>About</h3>
-      <p>프로필과 연구/관심 분야</p>
+      <p>자기소개</p>
     </div>
   </a>
   <a class="overlay-card" href="#portfolio" style="--bg:url('/uploads/slider/slider2.jpg')">
