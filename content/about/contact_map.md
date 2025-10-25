@@ -17,7 +17,7 @@ title: '연락처 · 위치'
 <div class="about-map">
   <iframe
     title="Location Map"
-    src="https://www.openstreetmap.org/way/35424732"
+    src="https://www.openstreetmap.org/export/embed.html?bbox=127.099%2C35.826%2C127.159%2C35.866&layer=mapnik&marker=35.846%2C127.129"
     loading="lazy"
     referrerpolicy="no-referrer-when-downgrade"
   ></iframe>
