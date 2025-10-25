@@ -40,6 +40,7 @@ social:
 #   icon_pack: ai
 #   link: uploads/resume.pdf
 ---
-기계설계와 컴퓨터인공지능학부 학부생입니다. 풀스택개발, 데이터 엔지니어링에 관심을 가지고 공부하고 있습니다.
+기계설계와 컴퓨터인공지능학부 학부생입니다. 
+풀스택개발, 데이터 엔지니어링에 관심을 가지고 공부하고 있습니다. 
 
 {{< icon name="download" pack="fas" >}} {{< staticref "uploads/resume.pdf" "newtab" >}}이력서 다운로드{{< /staticref >}}
