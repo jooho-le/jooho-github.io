@@ -11,7 +11,7 @@ headless: true
 weight: 50
 
 title: 'Projects'
-subtitle: '대표 프로젝트 카드(이미지·제목만 표시)'
+subtitle: '대표 프로젝트 카드'
 
 content:
   # Page type to display. E.g. project.
