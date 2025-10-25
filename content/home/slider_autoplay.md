@@ -9,6 +9,16 @@ title: ''
   // Robust slider control: wait for the carousel to exist, then
   // initialize Bootstrap's Carousel API and wire arrow controls.
   (function () {
+    function advanceWithClasses(el, dir){
+      var items = el.querySelectorAll('.carousel-item');
+      if (!items.length) return;
+      var active = el.querySelector('.carousel-item.active') || items[0];
+      var i = Array.prototype.indexOf.call(items, active);
+      var nextIndex = (i + (dir > 0 ? 1 : -1) + items.length) % items.length;
+      if (active) active.classList.remove('active');
+      items[nextIndex].classList.add('active');
+    }
+
     function initCarousel(el){
       if (!el) return;
       // Fix odd hashes on controls to avoid errors
@@ -30,19 +40,27 @@ title: ''
         if (prevCtrl) prevCtrl.addEventListener('click', function(e){ e.preventDefault(); instance.prev(); });
       } else {
         // Fallback: manual cycle with classes
-        setInterval(function(){
-          var items = el.querySelectorAll('.carousel-item');
-          if (!items.length) return;
-          var active = el.querySelector('.carousel-item.active');
-          var i = Array.prototype.indexOf.call(items, active);
-          var nextIndex = (i + 1) % items.length;
-          if (active) active.classList.remove('active');
-          items[nextIndex].classList.add('active');
-        }, 6000);
-        if (nextCtrl) nextCtrl.addEventListener('click', function(e){ e.preventDefault(); var act=el.querySelector('.carousel-item.active'); var items=el.querySelectorAll('.carousel-item'); var i=Array.prototype.indexOf.call(items, act); var n=(i+1)%items.length; if(act) act.classList.remove('active'); items[n].classList.add('active'); });
-        if (prevCtrl) prevCtrl.addEventListener('click', function(e){ e.preventDefault(); var act=el.querySelector('.carousel-item.active'); var items=el.querySelectorAll('.carousel-item'); var i=Array.prototype.indexOf.call(items, act); var p=(i-1+items.length)%items.length; if(act) act.classList.remove('active'); items[p].classList.add('active'); });
+        setInterval(function(){ advanceWithClasses(el, +1); }, 6000);
+        if (nextCtrl) nextCtrl.addEventListener('click', function(e){ e.preventDefault(); advanceWithClasses(el, +1); });
+        if (prevCtrl) prevCtrl.addEventListener('click', function(e){ e.preventDefault(); advanceWithClasses(el, -1); });
       }
     }
+
+    // Event delegation as a last resort in case controls are re-rendered later
+    document.addEventListener('click', function(e){
+      var next = e.target.closest('.wg-slider .carousel-control-next');
+      var prev = e.target.closest('.wg-slider .carousel-control-prev');
+      if (!next && !prev) return;
+      var el = document.querySelector('.wg-slider .carousel');
+      if (!el) return;
+      e.preventDefault();
+      if (window.bootstrap && window.bootstrap.Carousel) {
+        var instance = window.bootstrap.Carousel.getOrCreateInstance(el);
+        if (next) instance.next(); else instance.prev();
+      } else {
+        advanceWithClasses(el, next ? +1 : -1);
+      }
+    }, true);
 
     function waitForCarousel(){
       var el = document.querySelector('.wg-slider .carousel');
