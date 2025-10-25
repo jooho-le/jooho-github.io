@@ -56,8 +56,9 @@ title: ''
       var ctrl = next || prev;
       var selector = ctrl.getAttribute('data-bs-target') || ctrl.getAttribute('href');
       var el = null;
-      if (selector && selector.startsWith('#')) {
-        el = document.querySelector(selector);
+      // sanitize invalid selectors like '#.' which cause querySelector errors
+      if (selector && selector.startsWith('#') && selector !== '#.' && selector.length > 1) {
+        try { el = document.querySelector(selector); } catch(_) { el = null; }
       }
       if (!el) {
         el = ctrl.closest('.carousel') || document.querySelector('.wg-slider .carousel') || document.querySelector('.carousel');
