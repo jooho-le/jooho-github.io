@@ -20,7 +20,7 @@ design:
   <div class="feature-item">
     <i class="fas fa-robot"></i>
     <h3>AI</h3>
-    <p>모델 학습·서빙·응용 전반에 관심이 있습니다.</p>
+    <p>모델 학습·서빙·응용, AI활용 서비스개발 전반에 관심이 있습니다.</p>
   </div>
   <div class="feature-item">
     <i class="fas fa-database"></i>
