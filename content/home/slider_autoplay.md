@@ -28,13 +28,16 @@ title: ''
       if (prevCtrl && (!prevCtrl.getAttribute('href') || prevCtrl.getAttribute('href') === '#.')) prevCtrl.setAttribute('href', '#');
 
       if (window.bootstrap && window.bootstrap.Carousel) {
-        var instance = window.bootstrap.Carousel.getOrCreateInstance(el, {
+        var opts = {
           interval: 6000,   // auto interval
           ride: false,
           pause: false,
           wrap: true,
           touch: true
-        });
+        };
+        var instance = (window.bootstrap.Carousel.getOrCreateInstance
+                         ? window.bootstrap.Carousel.getOrCreateInstance(el, opts)
+                         : (window.bootstrap.Carousel.getInstance && window.bootstrap.Carousel.getInstance(el)) || new window.bootstrap.Carousel(el, opts));
         // Ensure arrows control via API and don't navigate the hash
         if (nextCtrl) nextCtrl.addEventListener('click', function(e){ e.preventDefault(); instance.next(); });
         if (prevCtrl) prevCtrl.addEventListener('click', function(e){ e.preventDefault(); instance.prev(); });
@@ -67,7 +70,9 @@ title: ''
 
       e.preventDefault();
       if (window.bootstrap && window.bootstrap.Carousel) {
-        var instance = window.bootstrap.Carousel.getOrCreateInstance(el);
+        var instance = (window.bootstrap.Carousel.getOrCreateInstance
+                         ? window.bootstrap.Carousel.getOrCreateInstance(el)
+                         : (window.bootstrap.Carousel.getInstance && window.bootstrap.Carousel.getInstance(el)) || new window.bootstrap.Carousel(el));
         if (next) instance.next(); else instance.prev();
       } else {
         advanceWithClasses(el, next ? +1 : -1);
