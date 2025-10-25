@@ -24,7 +24,7 @@ content:
         
         <a class="btn btn-primary" href="./">Home →</a>
       background:
-        image: 'slider1.jpg'  
+        image: 'static/upload/slider/slider1.jpg'  
         brightness: 0.35                    
       cta:
         label: 'Home'
