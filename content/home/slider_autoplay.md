@@ -48,11 +48,22 @@ title: ''
 
     // Event delegation in case controls are re-rendered later
     document.addEventListener('click', function(e){
-      var next = e.target.closest('.wg-slider .carousel-control-next');
-      var prev = e.target.closest('.wg-slider .carousel-control-prev');
+      var next = e.target.closest('.carousel-control-next');
+      var prev = e.target.closest('.carousel-control-prev');
       if (!next && !prev) return;
-      var el = document.querySelector('.wg-slider .carousel');
+
+      // Resolve target carousel (via data-bs-target or href hash or closest .carousel)
+      var ctrl = next || prev;
+      var selector = ctrl.getAttribute('data-bs-target') || ctrl.getAttribute('href');
+      var el = null;
+      if (selector && selector.startsWith('#')) {
+        el = document.querySelector(selector);
+      }
+      if (!el) {
+        el = ctrl.closest('.carousel') || document.querySelector('.wg-slider .carousel') || document.querySelector('.carousel');
+      }
       if (!el) return;
+
       e.preventDefault();
       if (window.bootstrap && window.bootstrap.Carousel) {
         var instance = window.bootstrap.Carousel.getOrCreateInstance(el);
@@ -81,4 +92,3 @@ title: ''
     }
   })();
 </script>
-

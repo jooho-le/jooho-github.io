@@ -203,7 +203,7 @@ ul.network-icon .big-icon {
 }
 /* Ensure arrows on top */
 .wg-slider .carousel-control-next,
-.wg-slider .carousel-control-prev { z-index: 3; }
+.wg-slider .carousel-control-prev { z-index: 10; pointer-events: auto; }
 
 /* Slider height fallback to ensure visibility */
 .wg-slider .carousel-item {
