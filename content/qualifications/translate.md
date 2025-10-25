@@ -16,14 +16,13 @@ title: ''
   (function(){
     var lang = (document.documentElement.getAttribute('lang')||'').toLowerCase();
     if(!lang.startsWith('en')) return;
-    function googleTranslateElementInit(){
+    window.googleTranslateElementInit = function(){
       try{ new google.translate.TranslateElement({pageLanguage:'ko', includedLanguages:'en', autoDisplay:false}, 'google_translate_element'); }catch(e){}
-    }
+    };
     document.cookie = 'googtrans=/ko/en;path=/';
     document.cookie = 'googtrans=/ko/en;domain='+location.hostname+';path=/';
     var s=document.createElement('script');
-    s.src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+    s.src='https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
     document.head.appendChild(s);
   })();
   </script>
-
