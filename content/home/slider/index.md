@@ -24,7 +24,7 @@ content:
         
         <a class="btn btn-primary" href="./">Home →</a>
       background:
-        image: 'static/upload/slider/slider1.jpg'  
+        image: '/Users/leejooho/Desktop/jooho-github.io/static/uploads/slider/slider1.jpg'  
         brightness: 0.35                    
       cta:
         label: 'Home'
@@ -107,37 +107,4 @@ content:
       cta:
         label: 'Experience'
         url: 'experience/'
-
-    # [슬라이드 8] — Unsplash 1
-    - title: 'Medical AI'
-      content: |-
-        Unsplash 이미지를 사용한 배경 예시입니다.
-      background:
-        image: 'https://source.unsplash.com/1600x900/?medical,ai'
-        brightness: 0.35
-      cta:
-        label: 'Unsplash'
-        url: 'https://unsplash.com/'
-
-    # [슬라이드 9] — Unsplash 2
-    - title: 'Data Engineering'
-      content: |-
-        Unsplash 이미지를 사용한 배경 예시입니다.
-      background:
-        image: 'https://source.unsplash.com/1600x900/?data,engineering'
-        brightness: 0.35
-      cta:
-        label: 'Unsplash'
-        url: 'https://unsplash.com/'
-
-    # [슬라이드 10] — Unsplash 3
-    - title: 'Embedded'
-      content: |-
-        Unsplash 이미지를 사용한 배경 예시입니다.
-      background:
-        image: 'https://source.unsplash.com/1600x900/?embedded,hardware'
-        brightness: 0.35
-      cta:
-        label: 'Unsplash'
-        url: 'https://unsplash.com/'
 ---
