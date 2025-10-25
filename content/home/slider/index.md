@@ -25,7 +25,7 @@ content:
         <a class="btn btn-primary" href="./">Home →</a>
       # 슬라이드 배경 이미지 (파일명만 바꿔요)
       background:
-        image: '/uploads/slider/slider1.jpg'  
+        image: 'slider1.jpg'  
         brightness: 0.35                    
       cta:
         label: 'Home'
