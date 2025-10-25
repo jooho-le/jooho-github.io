@@ -13,8 +13,8 @@ ko:
 en:
   languageCode: en-us
   languageName: English
-  # 같은 콘텐츠 구조를 공유하도록 contentDir를 기본값으로 둡니다.
-  # 별도 영어 컨텐츠를 만들려면 content/en 를 만들고 아래 줄을 해제하세요.
-  contentDir: content/en
+  # 같은 콘텐츠를 공유해 404 없이 모든 페이지가 표시되도록 기본 content 디렉터리를 사용합니다.
+  # 별도 번역을 만들 때만 content/en 을 사용하세요.
+  # contentDir: content/en
   params:
     description: Personal portfolio in English.
