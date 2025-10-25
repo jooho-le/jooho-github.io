@@ -23,7 +23,6 @@ content:
         홈으로 이동합니다.
         
         <a class="btn btn-primary" href="./">Home →</a>
-      # 슬라이드 배경 이미지 (파일명만 바꿔요)
       background:
         image: 'slider1.jpg'  
         brightness: 0.35                    
@@ -47,7 +46,7 @@ content:
     # [슬라이드 3] — Projects
     - title: 'Projects'
       content: |-
-        홈의 프로젝트 섹션으로 이동합니다.
+        프로젝트들을 볼 수 있습니다.
         
         <a class="btn btn-primary" href="#portfolio">Projects →</a>
       background:
@@ -73,7 +72,7 @@ content:
     # [슬라이드 5] — Award
     - title: 'Award'
       content: |-
-        수상 내역을 확인해 보세요.
+        수상 내역을 볼 수 있습니다.
         
         <a class="btn btn-primary" href="award/">Award →</a>
       background:
