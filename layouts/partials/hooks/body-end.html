@@ -62,43 +62,37 @@
       items[n].classList.add('active');
     }
 
-    function wireCarousel(){
-      var car = document.querySelector('.wg-slider .carousel');
-      if (!car) return;
-      if (!car.id) car.id = 'home-carousel';
-      ['.carousel-control-next', '.carousel-control-prev'].forEach(function(sel){
-        document.querySelectorAll(sel).forEach(function(ctrl){
-          if (!ctrl.closest('.carousel')) return; // only slider controls
+    function wireAllCarousels(){
+      var cars = document.querySelectorAll('.carousel');
+      if (!cars.length) return;
+      cars.forEach(function(car, idx){
+        if (!car.id) car.id = 'carousel-' + (idx+1);
+        // fix controls inside this carousel only
+        car.querySelectorAll('.carousel-control-next, .carousel-control-prev').forEach(function(ctrl){
           var href = ctrl.getAttribute('href')||'';
           if (href === '#.' || href === '') ctrl.setAttribute('href','#');
           ctrl.setAttribute('data-bs-target','#'+car.id);
+          // bind click to this carousel
+          ctrl.addEventListener('click', function(e){
+            e.preventDefault();
+            if (window.bootstrap && window.bootstrap.Carousel){
+              var get = window.bootstrap.Carousel.getOrCreateInstance || function(el,opts){
+                return (window.bootstrap.Carousel.getInstance && window.bootstrap.Carousel.getInstance(el)) || new window.bootstrap.Carousel(el, opts||{});
+              };
+              var inst = get(car);
+              if (ctrl.classList.contains('carousel-control-next')) inst.next(); else inst.prev();
+            } else {
+              advance(car, ctrl.classList.contains('carousel-control-next')?+1:-1);
+            }
+          }, true);
         });
       });
-
-      // Click handling with Bootstrap or manual fallback
-      document.addEventListener('click', function(e){
-        var next = e.target.closest('.carousel-control-next');
-        var prev = e.target.closest('.carousel-control-prev');
-        if (!next && !prev) return;
-        var ctrl = next || prev;
-        if (!ctrl.closest('.wg-slider')) return;
-        e.preventDefault();
-        if (window.bootstrap && window.bootstrap.Carousel){
-          var get = window.bootstrap.Carousel.getOrCreateInstance || function(el,opts){
-            return (window.bootstrap.Carousel.getInstance && window.bootstrap.Carousel.getInstance(el)) || new window.bootstrap.Carousel(el, opts||{});
-          };
-          var inst = get(car);
-          if (next) inst.next(); else inst.prev();
-        } else {
-          advance(car, next?+1:-1);
-        }
-      }, true);
     }
 
     if (document.readyState === 'loading'){
-      document.addEventListener('DOMContentLoaded', wireCarousel);
+      document.addEventListener('DOMContentLoaded', wireAllCarousels);
     } else {
-      wireCarousel();
+      wireAllCarousels();
     }
   })();
 </script>
