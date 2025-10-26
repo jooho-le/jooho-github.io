@@ -14,6 +14,5 @@ en:
   languageCode: en-us
   languageName: English
   contentDir: content/en
-  baseURL: https://jooho-le.github.io/jooho-github.io/en/
   params:
     description: Personal portfolio in English.
