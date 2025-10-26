@@ -8,11 +8,13 @@ ko:
   languageName: 한국어
   # 다국어를 쓰지 않는 경우 contentDir는 기본값 사용
   #contentDir: content
+  baseURL: https://jooho-le.github.io/jooho-github.io/
 
 # 참고) 영어를 추가해 2개 언어로 운영하려면 아래 예시를 참고해 추가하세요.
 en:
   languageCode: en-us
   languageName: English
   contentDir: content/en
+  baseURL: https://jooho-le.github.io/jooho-github.io/en/
   params:
     description: Personal portfolio in English.
