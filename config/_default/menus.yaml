@@ -5,23 +5,23 @@
 
 main:
   - name: Home
-    url: /
+    pageRef: /
     weight: 5
   - name: About
-    url: /about/
+    pageRef: about
     weight: 10
   - name: Project
-    url: /project/
+    pageRef: project
     weight: 20
   - name: Qualifications
-    url: /qualifications/
+    pageRef: qualifications
     weight: 30
   - name: Award
-    url: /award/
+    pageRef: award
     weight: 40
   - name: Skills
-    url: /skills/
+    pageRef: skills
     weight: 50
   - name: Experience
-    url: /experience/
+    pageRef: experience
     weight: 60
