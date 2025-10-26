@@ -42,4 +42,19 @@ design:
     <h3>Mechanical Design</h3>
     <p>기계설계적 공부를 하는 것을 좋아합니다.</p>
   </div>
+  <div class="feature-item">
+    <i class="fas fa-cloud"></i>
+    <h3>Cloud</h3>
+    <p>클라우드 서비스와 인프라 활용.</p>
+  </div>
+  <div class="feature-item">
+    <i class="fas fa-server"></i>
+    <h3>Database</h3>
+    <p>데이터 모델링과 DB 설계/운영.</p>
+  </div>
+  <div class="feature-item">
+    <i class="fas fa-project-diagram"></i>
+    <h3>Algorithm</h3>
+    <p>문제 해결과 효율적 알고리즘 탐구.</p>
+  </div>
 </div>
