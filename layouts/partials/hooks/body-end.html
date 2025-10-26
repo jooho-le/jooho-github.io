@@ -1,0 +1,49 @@
+<script>
+  // Normalize internal links to stay within the current language + project base path.
+  // Works for GitHub Pages project sites like /jooho-github.io and language /en/ subtree.
+  (function(){
+    function fixLinks(){
+      try {
+        var path = location.pathname;
+        var proj = '/jooho-github.io/';
+        var idx = path.indexOf(proj);
+        var base = idx >= 0 ? path.substring(0, idx + proj.length) : '/';
+        var isEn = path.indexOf(proj + 'en/') >= 0;
+        var langBase = base + (isEn ? 'en/' : '');
+
+        document.querySelectorAll('a[href]:not([data-langfixed])').forEach(function(a){
+          var h = a.getAttribute('href');
+          if (!h) return;
+          // Skip external or hash-only links
+          if (/^(https?:)?\/\//i.test(h) || h.startsWith('mailto:') || h.startsWith('#')) return;
+
+          // Already absolute to our project path? leave as is
+          if (h.startsWith(base) || h.startsWith(langBase)) { a.setAttribute('data-langfixed','1'); return; }
+
+          // Normalize absolute root (/) to project base, preserving language
+          if (h.startsWith('/')) {
+            h = h.replace(/^\/+/, '');
+            a.setAttribute('href', (isEn ? base + 'en/' : base) + h);
+            a.setAttribute('data-langfixed','1');
+            return;
+          }
+
+          // Relative path: prefix current language base
+          h = h.replace(/^\.\//, '');
+          a.setAttribute('href', langBase + h);
+          a.setAttribute('data-langfixed','1');
+        });
+      } catch(e) { /* no-op */ }
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', fixLinks);
+    } else {
+      fixLinks();
+    }
+    // Watch for dynamically-added content (e.g., sliders/widgets)
+    var mo = new MutationObserver(fixLinks);
+    mo.observe(document.documentElement, { childList: true, subtree: true });
+  })();
+</script>
+
