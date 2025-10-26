@@ -7,7 +7,7 @@ subtitle: 'Quick links'
 ---
 
 <div class="overlay-cards">
-  <a class="overlay-card" href="about/" style="--bg:url('/jooho-github.io/uploads/slider/slider1.jpg')">
+  <a class="overlay-card" href="{{< relref \"about\" >}}" style="--bg:url('/jooho-github.io/uploads/slider/slider1.jpg')">
     <div class="overlay"></div>
     <div class="overlay-text">
       <h3>About</h3>

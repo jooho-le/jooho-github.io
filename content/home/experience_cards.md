@@ -15,7 +15,7 @@ subtitle: ''
         <a href="https://codeclubkorea.org/" target="_blank" rel="noopener">코드클럽한국위원회</a>
         · 2024.01 — 2025.12 · Jeonju
       </p>
-      <a class="btn btn-primary" href="experience/" target="_self">Experience 전체</a>
+      <a class="btn btn-primary" href="{{< relref "experience" >}}" target="_self">Experience 전체</a>
     </div>
   </div>
 
@@ -27,7 +27,7 @@ subtitle: ''
         <a href="https://www.pearlabyss.com/ko-KR" target="_blank" rel="noopener">펄어비스 · 씨드콥</a>
         · 2024.07 — 2024.08 · Seoul
       </p>
-      <a class="btn btn-primary" href="experience/" target="_self">Experience 전체</a>
+      <a class="btn btn-primary" href="{{< relref "experience" >}}" target="_self">Experience 전체</a>
     </div>
   </div>
 
@@ -39,7 +39,7 @@ subtitle: ''
         <a href="https://gpu-jbnu.notion.site/2025-GPU-12e82806df888038bc10d5e315e8d544#16c82806df8880cabc32ffcbd27bb84b" target="_blank" rel="noopener">전북대학교</a>
         · 2024.03 — 2025.12 · Jeonju
       </p>
-      <a class="btn btn-primary" href="experience/" target="_self">Experience 전체</a>
+      <a class="btn btn-primary" href="{{< relref "experience" >}}" target="_self">Experience 전체</a>
     </div>
   </div>
 
@@ -51,8 +51,7 @@ subtitle: ''
         <a href="https://kbhope.kr/" target="_blank" rel="noopener">KB 국민은행 · 아이들과미래재단</a>
         · 2025.03 — 2026.02 · Seoul · Jeonju
       </p>
-      <a class="btn btn-primary" href="experience/" target="_self">Experience 전체</a>
+      <a class="btn btn-primary" href="{{< relref "experience" >}}" target="_self">Experience 전체</a>
     </div>
   </div>
 </div>
-

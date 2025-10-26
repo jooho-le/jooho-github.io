@@ -26,5 +26,5 @@ Hello! I’m **Jooho Lee**, an undergraduate student majoring in **Mechanical De
 I’m passionate about **full-stack web/app development**, **data engineering**, and **AI model training**.  
 Most of my projects focus on addressing **real-world and social issues** through technology.
 
-<a class="btn btn-primary" href="about/">Learn More →</a>
+<a class="btn btn-primary" href="{{< relref "about" >}}">Learn More →</a>
 <a class="btn btn-primary" href="uploads/resume.pdf" download="resume.pdf" target="_blank" rel="noopener">Download Resume →</a>

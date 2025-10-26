@@ -24,7 +24,7 @@ content:
       content: |-
         Check my profile and interests.
 
-        <a class="btn btn-primary" href="about/">About →</a>
+        <a class="btn btn-primary" href="{{< relref "about" >}}">About →</a>
       background:
         image: '/uploads/slider/slider2.jpg'
         brightness: 0.35
@@ -44,4 +44,3 @@ content:
         label: 'Projects'
         url: '#portfolio'
 ---
-

@@ -27,7 +27,7 @@ content:
       content: |-
         자기소개와 프로필을 확인해 보세요.
         
-        <a class="btn btn-primary" href="about/">About →</a>
+        <a class="btn btn-primary" href="{{< relref "about" >}}">About →</a>
       background:
         image: 'slider2.jpg'
         brightness: 0.35
@@ -53,7 +53,7 @@ content:
       content: |-
         보유 자격증 목록을 볼 수 있습니다.
         
-        <a class="btn btn-primary" href="qualifications/">Qualifications →</a>
+        <a class="btn btn-primary" href="{{< relref "qualifications" >}}">Qualifications →</a>
       background:
         image: 'slider2.jpg'
         brightness: 0.35
@@ -66,7 +66,7 @@ content:
       content: |-
         수상 내역을 볼 수 있습니다.
         
-        <a class="btn btn-primary" href="award/">Award →</a>
+        <a class="btn btn-primary" href="{{< relref "award" >}}">Award →</a>
       background:
         image: 'slider3.jpg'
         brightness: 0.35
@@ -79,7 +79,7 @@ content:
       content: |-
         기술 스택과 도구들을 정리했습니다.
         
-        <a class="btn btn-primary" href="skills/">Skills →</a>
+        <a class="btn btn-primary" href="{{< relref "skills" >}}">Skills →</a>
       background:
         image: 'slider1.jpg'
         brightness: 0.35
@@ -92,7 +92,7 @@ content:
       content: |-
         활동/경험 전체 목록으로 이동합니다.
         
-        <a class="btn btn-primary" href="experience/">Experience →</a>
+        <a class="btn btn-primary" href="{{< relref "experience" >}}">Experience →</a>
       background:
         image: 'slider2.jpg'
         brightness: 0.35

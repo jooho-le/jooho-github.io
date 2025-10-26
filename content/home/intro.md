@@ -26,5 +26,5 @@ design:
 앱웹 풀스택 개발, 데이터 엔지니어랑, AI학습에 관심을 가지고 프로젝트들을 진행하고있습니다. 
 주로 사회문제해결에 관심을 두고 주제를 잡고 있습니다. 
 
-<a class="btn btn-primary" href="about/">더 알아보기 →</a>
+<a class="btn btn-primary" href="{{< relref "about" >}}">더 알아보기 →</a>
 <a class="btn btn-primary" href="uploads/resume.pdf" download="resume.pdf" target="_blank" rel="noopener">이력서 다운로드 →</a>
