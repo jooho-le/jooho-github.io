@@ -5,7 +5,6 @@ weight: 40
 title: 'Skills'
 ---
 
-{{< rawhtml >}}
 <div class="bars bars-2col">
   <div>
     <h4>LANGUAGE</h4>
@@ -24,5 +23,3 @@ title: 'Skills'
     <div class="bar"><label>OPEN SOURCE</label><span style="width:60%"></span></div>
   </div>
 </div>
-{{< /rawhtml >}}
-

@@ -5,7 +5,6 @@ weight: 30
 title: 'Languages & Technologies'
 ---
 
-{{< rawhtml >}}
 <div class="bars bars-4col">
   <div>
     <h4>COLLABORATION</h4>
@@ -58,5 +57,3 @@ title: 'Languages & Technologies'
     <div class="bar"><label>MySQL</label><span style="width:90%"></span></div>
   </div>
 </div>
-{{< /rawhtml >}}
-

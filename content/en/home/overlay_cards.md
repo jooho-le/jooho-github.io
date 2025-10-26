@@ -6,7 +6,6 @@ title: 'Highlights'
 subtitle: 'Quick links'
 ---
 
-{{< rawhtml >}}
 <div class="overlay-cards">
   <a class="overlay-card" href="about/" style="--bg:url('/uploads/slider/slider1.jpg')">
     <div class="overlay"></div>
@@ -30,5 +29,3 @@ subtitle: 'Quick links'
     </div>
   </a>
 </div>
-{{< /rawhtml >}}
-

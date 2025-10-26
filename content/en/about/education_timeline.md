@@ -5,7 +5,6 @@ weight: 50
 title: 'Education'
 ---
 
-{{< rawhtml >}}
 <div class="timeline">
   <div class="timeline-item">
     <div class="dot"></div>
@@ -24,5 +23,3 @@ title: 'Education'
     </div>
   </div>
 </div>
-{{< /rawhtml >}}
-

@@ -6,7 +6,6 @@ title: 'My Interests'
 subtitle: 'Six areas of interest'
 ---
 
-{{< rawhtml >}}
 <div class="features-grid">
   <div class="feature-item"><i class="fas fa-heartbeat"></i><h3>Medical AI</h3></div>
   <div class="feature-item"><i class="fas fa-robot"></i><h3>AI</h3></div>
@@ -15,5 +14,3 @@ subtitle: 'Six areas of interest'
   <div class="feature-item"><i class="fas fa-microchip"></i><h3>Embedded</h3></div>
   <div class="feature-item"><i class="fas fa-cogs"></i><h3>Mechanical Design</h3></div>
 </div>
-{{< /rawhtml >}}
-

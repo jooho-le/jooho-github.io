@@ -5,7 +5,6 @@ weight: 60
 title: 'Contact · Location'
 ---
 
-{{< rawhtml >}}
 <div class="about-contact">
   <ul class="contact-list">
     <li><i class="fas fa-envelope"></i><a href="mailto:wngh9696@naver.com">wngh9696@naver.com</a></li>
@@ -23,5 +22,3 @@ title: 'Contact · Location'
     referrerpolicy="no-referrer-when-downgrade"
   ></iframe>
 </div>
-{{< /rawhtml >}}
-

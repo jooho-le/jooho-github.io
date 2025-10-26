@@ -6,7 +6,6 @@ title: ''
 subtitle: ''
 ---
 
-{{< rawhtml >}}
 <div class="about-hero">
   <div class="about-left">
     <img class="about-avatar" src="/uploads/profile.jpg" alt="profile" />
@@ -23,5 +22,3 @@ subtitle: ''
     </p>
   </div>
 </div>
-{{< /rawhtml >}}
-
