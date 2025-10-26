@@ -47,3 +47,58 @@
   })();
 </script>
 
+<script>
+  // Ensure slider arrows work by fixing invalid href (e.g., "#.") and wiring
+  // controls to the closest carousel. Provides a manual fallback if Bootstrap
+  // Carousel is unavailable.
+  (function(){
+    function advance(el, dir){
+      var items = el.querySelectorAll('.carousel-item');
+      if (!items.length) return;
+      var active = el.querySelector('.carousel-item.active') || items[0];
+      var i = Array.prototype.indexOf.call(items, active);
+      var n = (i + (dir>0?1:-1) + items.length) % items.length;
+      if (active) active.classList.remove('active');
+      items[n].classList.add('active');
+    }
+
+    function wireCarousel(){
+      var car = document.querySelector('.wg-slider .carousel');
+      if (!car) return;
+      if (!car.id) car.id = 'home-carousel';
+      ['.carousel-control-next', '.carousel-control-prev'].forEach(function(sel){
+        document.querySelectorAll(sel).forEach(function(ctrl){
+          if (!ctrl.closest('.carousel')) return; // only slider controls
+          var href = ctrl.getAttribute('href')||'';
+          if (href === '#.' || href === '') ctrl.setAttribute('href','#');
+          ctrl.setAttribute('data-bs-target','#'+car.id);
+        });
+      });
+
+      // Click handling with Bootstrap or manual fallback
+      document.addEventListener('click', function(e){
+        var next = e.target.closest('.carousel-control-next');
+        var prev = e.target.closest('.carousel-control-prev');
+        if (!next && !prev) return;
+        var ctrl = next || prev;
+        if (!ctrl.closest('.wg-slider')) return;
+        e.preventDefault();
+        if (window.bootstrap && window.bootstrap.Carousel){
+          var get = window.bootstrap.Carousel.getOrCreateInstance || function(el,opts){
+            return (window.bootstrap.Carousel.getInstance && window.bootstrap.Carousel.getInstance(el)) || new window.bootstrap.Carousel(el, opts||{});
+          };
+          var inst = get(car);
+          if (next) inst.next(); else inst.prev();
+        } else {
+          advance(car, next?+1:-1);
+        }
+      }, true);
+    }
+
+    if (document.readyState === 'loading'){
+      document.addEventListener('DOMContentLoaded', wireCarousel);
+    } else {
+      wireCarousel();
+    }
+  })();
+</script>
