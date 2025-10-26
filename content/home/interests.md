@@ -5,7 +5,7 @@ headless: true
 weight: 30
 
 title: 'My Interests'
-subtitle: '관심 분야 다섯 가지'
+subtitle: '관심 분야'
 
 design:
   columns: '3'
@@ -40,7 +40,7 @@ design:
   <div class="feature-item">
     <i class="fas fa-cogs"></i>
     <h3>Mechanical Design</h3>
-    <p>기계설계적 공부를 하는 것을 좋아합니다.</p>
+    <p>기계설계적 공부.</p>
   </div>
   <div class="feature-item">
     <i class="fas fa-cloud"></i>
